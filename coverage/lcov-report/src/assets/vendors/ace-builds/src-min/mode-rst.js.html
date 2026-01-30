@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/mode-rst.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> mode-rst.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/21</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/7</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/mode/rst_highlight_rules",["require","exports","module","ace/lib/oop","ace/lib/lang","ace/mode/text_highlight_rules"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("../lib/lang"),</span>s=<span class="cstat-no" title="statement not covered" >e("./text_highlight_rules").TextHighlightRules,</span>o=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >{title:"markup.heading",list:"markup.heading",table:"constant",directive:"keyword.operator",entity:"string",link:"markup.underline.list",bold:"markup.bold",italic:"markup.italic",literal:"support.function",comment:"comment"},</span>t=<span class="cstat-no" title="statement not covered" >"(^|\\s|[\"'(&lt;\\[{\\-/:])",</span>n=<span class="cstat-no" title="statement not covered" >"(?:$|(?=\\s|[\\\\.,;!?\\-/:\"')&gt;\\]}]))";<span class="cstat-no" title="statement not covered" ></span>this.$rules={start:[{token:e.title,regex:"(^)([\\=\\-`:\\.'\"~\\^_\\*\\+#])(\\2{2,}\\s*$)"},{token:["text",e.directive,e.literal],regex:"(^\\s*\\.\\. )([^: ]+::)(.*$)",next:"codeblock"},{token:e.directive,regex:"::$",next:"codeblock"},{token:[e.entity,e.link],regex:"(^\\.\\. _[^:]+:)(.*$)"},{token:[e.entity,e.link],regex:"(^__ )(https?://.*$)"},{token:e.entity,regex:"^\\.\\. \\[[^\\]]+\\] "},{token:e.comment,regex:"^\\.\\. .*$",next:"comment"},{token:e.list,regex:"^\\s*[\\*\\+-] "},{token:e.list,regex:"^\\s*(?:[A-Za-z]|[0-9]+|[ivxlcdmIVXLCDM]+)\\. "},{token:e.list,regex:"^\\s*\\(?(?:[A-Za-z]|[0-9]+|[ivxlcdmIVXLCDM]+)\\) "},{token:e.table,regex:"^={2,}(?: +={2,})+$"},{token:e.table,regex:"^\\+-{2,}(?:\\+-{2,})+\\+$"},{token:e.table,regex:"^\\+={2,}(?:\\+={2,})+\\+$"},{token:["text",e.literal],regex:t+"(``)(?=\\S)",next:"code"},{token:["text",e.bold],regex:t+"(\\*\\*)(?=\\S)",next:"bold"},{token:["text",e.italic],regex:t+"(\\*)(?=\\S)",next:"italic"},{token:e.entity,regex:"\\|[\\w\\-]+?\\|"},{token:e.entity,regex:":[\\w-:]+:`\\S",next:"entity"},{token:["text",e.entity],regex:t+"(_`)(?=\\S)",next:"entity"},{token:e.entity,regex:"_[A-Za-z0-9\\-]+?"},{token:["text",e.link],regex:t+"(`)(?=\\S)",next:"link"},{token:e.link,regex:"[A-Za-z0-9\\-]+?__?"},{token:e.link,regex:"\\[[^\\]]+?\\]_"},{token:e.link,regex:"https?://\\S+"},{token:e.table,regex:"\\|"}],codeblock:[{token:e.literal,regex:"^ +.+$",next:"codeblock"},{token:e.literal,regex:"^$",next:"codeblock"},{token:"empty",regex:"",next:"start"}],code:[{token:e.literal,regex:"\\S``"+n,next:"start"},{defaultToken:e.literal}],bold:[{token:e.bold,regex:"\\S\\*\\*"+n,next:"start"},{defaultToken:e.bold}],italic:[{token:e.italic,regex:"\\S\\*"+n,next:"start"},{defaultToken:e.italic}],entity:[{token:e.entity,regex:"\\S`"+n,next:"start"},{defaultToken:e.entity}],link:[{token:e.link,regex:"\\S`__?"+n,next:"start"},{defaultToken:e.link}],comment:[{token:e.comment,regex:"^ +.+$",next:"comment"},{token:e.comment,regex:"^$",next:"comment"},{token:"empty",regex:"",next:"start"}]}}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(o,s),t.RSTHighlightRules=o}</span>),define("ace/mode/rst",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/rst_highlight_rules"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./text").Mode,</span>s=<span class="cstat-no" title="statement not covered" >e("./rst_highlight_rules").RSTHighlightRules,</span>o=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.HighlightRules=s}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(o,i),<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.type="text",this.$id="ace/mode/rst",this.snippetFileId="ace/snippets/rst"}</span>.call(o.prototype),t.Mode=o}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/mode/rst"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

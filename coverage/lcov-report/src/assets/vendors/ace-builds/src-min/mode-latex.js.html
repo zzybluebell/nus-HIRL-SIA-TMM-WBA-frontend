@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/mode-latex.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> mode-latex.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/94</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/85</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/15</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/mode/latex_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/text_highlight_rules"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./text_highlight_rules").TextHighlightRules,</span>s=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.$rules={start:[{token:"comment",regex:"%.*$"},{token:["keyword","lparen","variable.parameter","rparen","lparen","storage.type","rparen"],regex:"(\\\\(?:documentclass|usepackage|input))(?:(\\[)([^\\]]*)(\\]))?({)([^}]*)(})"},{token:["keyword","lparen","variable.parameter","rparen"],regex:"(\\\\(?:label|v?ref|cite(?:[^{]*)))(?:({)([^}]*)(}))?"},{token:["storage.type","lparen","variable.parameter","rparen"],regex:"(\\\\begin)({)(verbatim)(})",next:"verbatim"},{token:["storage.type","lparen","variable.parameter","rparen"],regex:"(\\\\begin)({)(lstlisting)(})",next:"lstlisting"},{token:["storage.type","lparen","variable.parameter","rparen"],regex:"(\\\\(?:begin|end))({)([\\w*]*)(})"},{token:"storage.type",regex:/\\verb\b\*?/,next:[{token:["keyword.operator","string","keyword.operator"],regex:"(.)(.*?)(\\1|$)|",next:"start"}]},{token:"storage.type",regex:"\\\\[a-zA-Z]+"},{token:"lparen",regex:"[[({]"},{token:"rparen",regex:"[\\])}]"},{token:"constant.character.escape",regex:"\\\\[^a-zA-Z]?"},{token:"string",regex:"\\${1,2}",next:"equation"}],equation:[{token:"comment",regex:"%.*$"},{token:"string",regex:"\\${1,2}",next:"start"},{token:"constant.character.escape",regex:"\\\\(?:[^a-zA-Z]|[a-zA-Z]+)"},{token:"error",regex:"^\\s*$",next:"start"},{defaultToken:"string"}],verbatim:[{token:["storage.type","lparen","variable.parameter","rparen"],regex:"(\\\\end)({)(verbatim)(})",next:"start"},{defaultToken:"text"}],lstlisting:[{token:["storage.type","lparen","variable.parameter","rparen"],regex:"(\\\\end)({)(lstlisting)(})",next:"start"},{defaultToken:"text"}]},this.normalizeRules()}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(s,i),t.LatexHighlightRules=s}</span>),define("ace/mode/folding/latex",["require","exports","module","ace/lib/oop","ace/mode/folding/fold_mode","ace/range","ace/token_iterator"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./fold_mode").FoldMode,</span>s=<span class="cstat-no" title="statement not covered" >e("../../range").Range,</span>o=<span class="cstat-no" title="statement not covered" >e("../../token_iterator").TokenIterator,</span>u=<span class="cstat-no" title="statement not covered" >{"\\subparagraph":1,"\\paragraph":2,"\\subsubsubsection":3,"\\subsubsection":4,"\\subsection":5,"\\section":6,"\\chapter":7,"\\part":8,"\\begin":9,"\\end":10},</span>a=<span class="cstat-no" title="statement not covered" >t.FoldMode=<span class="fstat-no" title="function not covered" >fu</span>nction(){};<span class="cstat-no" title="statement not covered" ></span>r.inherits(a,i),<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.foldingStartMarker=/^\s*\\(begin)|\s*\\(part|chapter|(?:sub)*(?:section|paragraph))\b|{\s*$/,this.foldingStopMarker=/^\s*\\(end)\b|^\s*}/,this.getFoldWidgetRange=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >e.doc.getLine(n),</span>i=<span class="cstat-no" title="statement not covered" >this.foldingStartMarker.exec(r);<span class="cstat-no" title="statement not covered" ></span>if(i)<span class="cstat-no" title="statement not covered" >return i[1]?this.latexBlock(e,n,i[0].length-1):i[2]?this.latexSection(e,n,i[0].length-1):this.openingBracketBlock(e,"{",n,i.index);v</span></span>ar i=<span class="cstat-no" title="statement not covered" >this.foldingStopMarker.exec(r);<span class="cstat-no" title="statement not covered" ></span>if(i)<span class="cstat-no" title="statement not covered" >return i[1]?this.latexBlock(e,n,i[0].length-1):this.closingBracketBlock(e,"}",n,i.index+i[0].length)}</span></span>,this.latexBlock=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n,r){var i=<span class="cstat-no" title="statement not covered" >{"\\begin":1,"\\end":-1},</span>u=<span class="cstat-no" title="statement not covered" >new o(e,t,n),</span>a=<span class="cstat-no" title="statement not covered" >u.getCurrentToken();<span class="cstat-no" title="statement not covered" ></span>if(!a||a.type!="storage.type"&amp;&amp;a.type!="constant.character.escape")<span class="cstat-no" title="statement not covered" >return;v</span></span>ar f=<span class="cstat-no" title="statement not covered" >a.value,</span>l=<span class="cstat-no" title="statement not covered" >i[f],</span>c=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >u.stepForward(),</span>t=<span class="cstat-no" title="statement not covered" >e.type=="lparen"?u.stepForward().value:"";<span class="cstat-no" title="statement not covered" ></span>return l===-1&amp;&amp;(u.stepBackward(),t&amp;&amp;u.stepBackward()),t}</span>,</span>h=<span class="cstat-no" title="statement not covered" >[c()],</span>p=<span class="cstat-no" title="statement not covered" >l===-1?u.getCurrentTokenColumn():e.getLine(t).length,</span>d=<span class="cstat-no" title="statement not covered" >t;<span class="cstat-no" title="statement not covered" ></span>u.step=l===-1?u.stepBackward:u.stepForward;<span class="cstat-no" title="statement not covered" >w</span>hile(a=u.step()){<span class="cstat-no" title="statement not covered" >if(!a||a.type!="storage.type"&amp;&amp;a.type!="constant.character.escape")<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar v=<span class="cstat-no" title="statement not covered" >i[a.value];<span class="cstat-no" title="statement not covered" ></span>if(!v)<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar m=<span class="cstat-no" title="statement not covered" >c();<span class="cstat-no" title="statement not covered" ></span>if(v===l)<span class="cstat-no" title="statement not covered" >h.unshift(m);e</span>lse <span class="cstat-no" title="statement not covered" >if(h.shift()!==m||!h.length)<span class="cstat-no" title="statement not covered" >break}<span class="cstat-no" title="statement not covered" ></span></span></span>i</span>f(h.length)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >l</span></span>==1&amp;&amp;(u.stepBackward(),u.stepBackward());<span class="cstat-no" title="statement not covered" >i</span>f(r)<span class="cstat-no" title="statement not covered" >return u.getCurrentTokenRange();v</span></span>ar t=<span class="cstat-no" title="statement not covered" >u.getCurrentTokenRow();<span class="cstat-no" title="statement not covered" ></span>return l===-1?new s(t,e.getLine(t).length,d,p):new s(d,p,t,u.getCurrentTokenColumn())}</span>,this.latexSection=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >new o(e,t,n),</span>i=<span class="cstat-no" title="statement not covered" >r.getCurrentToken();<span class="cstat-no" title="statement not covered" ></span>if(!i||i.type!="storage.type")<span class="cstat-no" title="statement not covered" >return;v</span></span>ar a=<span class="cstat-no" title="statement not covered" >u[i.value]||0,</span>f=<span class="cstat-no" title="statement not covered" >0,</span>l=<span class="cstat-no" title="statement not covered" >t;<span class="cstat-no" title="statement not covered" ></span>while(i=r.stepForward()){<span class="cstat-no" title="statement not covered" >if(i.type!=="storage.type")<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar c=<span class="cstat-no" title="statement not covered" >u[i.value]||0;<span class="cstat-no" title="statement not covered" ></span>if(c&gt;=9){<span class="cstat-no" title="statement not covered" >f||(l=r.getCurrentTokenRow()-1),f+=c==9?1:-1;<span class="cstat-no" title="statement not covered" >i</span>f(f&lt;0)<span class="cstat-no" title="statement not covered" >break}</span></span>else <span class="cstat-no" title="statement not covered" >if(c&gt;=a)<span class="cstat-no" title="statement not covered" >break}<span class="cstat-no" title="statement not covered" ></span></span></span>f</span>||(l=r.getCurrentTokenRow()-1);<span class="cstat-no" title="statement not covered" >w</span>hile(l&gt;t&amp;&amp;!/\S/.test(e.getLine(l)))<span class="cstat-no" title="statement not covered" >l--;<span class="cstat-no" title="statement not covered" >r</span></span>eturn new s(t,e.getLine(t).length,l,e.getLine(l).length)}</span>}</span>.call(a.prototype)}</span>),define("ace/mode/latex",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/latex_highlight_rules","ace/mode/behaviour/cstyle","ace/mode/folding/latex"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./text").Mode,</span>s=<span class="cstat-no" title="statement not covered" >e("./latex_highlight_rules").LatexHighlightRules,</span>o=<span class="cstat-no" title="statement not covered" >e("./behaviour/cstyle").CstyleBehaviour,</span>u=<span class="cstat-no" title="statement not covered" >e("./folding/latex").FoldMode,</span>a=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.HighlightRules=s,this.foldingRules=new u,this.$behaviour=new o({braces:!0})}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(a,i),<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.type="text",this.lineCommentStart="%",this.$id="ace/mode/latex",this.getMatching=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){<span class="cstat-no" title="statement not covered" >t==undefined&amp;&amp;(t=e.selection.lead),typeof t=="object"&amp;&amp;(n=t.column,t=t.row);v</span>ar r=<span class="cstat-no" title="statement not covered" >e.getTokenAt(t,n);<span class="cstat-no" title="statement not covered" ></span>if(!r)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >i</span></span>f(r.value=="\\begin"||r.value=="\\end")<span class="cstat-no" title="statement not covered" >return this.foldingRules.latexBlock(e,t,n,!0)}</span></span>}</span>.call(a.prototype),t.Mode=a}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/mode/latex"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

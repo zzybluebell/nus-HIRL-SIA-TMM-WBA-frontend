@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/snippets/erlang.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min/snippets</a> erlang.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/6</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/snippets/erlang",["require","exports","module"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";<span class="cstat-no" title="statement not covered" >t.snippetText="# module and export all\nsnippet mod\n	-module(${1:`Filename('', 'my')`}).\n	\n	-compile([export_all]).\n	\n	start() -&gt;\n	    ${2}\n	\n	stop() -&gt;\n	    ok.\n# define directive\nsnippet def\n	-define(${1:macro}, ${2:body}).${3}\n# export directive\nsnippet exp\n	-export([${1:function}/${2:arity}]).\n# include directive\nsnippet inc\n	-include(\"${1:file}\").${2}\n# behavior directive\nsnippet beh\n	-behaviour(${1:behaviour}).${2}\n# if expression\nsnippet if\n	if\n	    ${1:guard} -&gt;\n	        ${2:body}\n	end\n# case expression\nsnippet case\n	case ${1:expression} of\n	    ${2:pattern} -&gt;\n	        ${3:body};\n	end\n# anonymous function\nsnippet fun\n	fun (${1:Parameters}) -&gt; ${2:body} end${3}\n# try...catch\nsnippet try\n	try\n	    ${1}\n	catch\n	    ${2:_:_} -&gt; ${3:got_some_exception}\n	end\n# record directive\nsnippet rec\n	-record(${1:record}, {\n	    ${2:field}=${3:value}}).${4}\n# todo comment\nsnippet todo\n	%% TODO: ${1}\n## Snippets below (starting with '%') are in EDoc format.\n## See http://www.erlang.org/doc/apps/edoc/chapter.html#id56887 for more details\n# doc comment\nsnippet %d\n	%% @doc ${1}\n# end of doc comment\nsnippet %e\n	%% @end\n# specification comment\nsnippet %s\n	%% @spec ${1}\n# private function marker\nsnippet %p\n	%% @private\n# OTP application\nsnippet application\n	-module(${1:`Filename('', 'my')`}).\n\n	-behaviour(application).\n\n	-export([start/2, stop/1]).\n\n	start(_Type, _StartArgs) -&gt;\n	    case ${2:root_supervisor}:start_link() of\n	        {ok, Pid} -&gt;\n	            {ok, Pid};\n	        Other -&gt;\n		          {error, Other}\n	    end.\n\n	stop(_State) -&gt;\n	    ok.	\n# OTP supervisor\nsnippet supervisor\n	-module(${1:`Filename('', 'my')`}).\n\n	-behaviour(supervisor).\n\n	%% API\n	-export([start_link/0]).\n\n	%% Supervisor callbacks\n	-export([init/1]).\n\n	-define(SERVER, ?MODULE).\n\n	start_link() -&gt;\n	    supervisor:start_link({local, ?SERVER}, ?MODULE, []).\n\n	init([]) -&gt;\n	    Server = {${2:my_server}, {$2, start_link, []},\n	      permanent, 2000, worker, [$2]},\n	    Children = [Server],\n	    RestartStrategy = {one_for_one, 0, 1},\n	    {ok, {RestartStrategy, Children}}.\n# OTP gen_server\nsnippet gen_server\n	-module(${1:`Filename('', 'my')`}).\n\n	-behaviour(gen_server).\n\n	%% API\n	-export([\n	         start_link/0\n	        ]).\n\n	%% gen_server callbacks\n	-export([init/1, handle_call/3, handle_cast/2, handle_info/2,\n	         terminate/2, code_change/3]).\n\n	-define(SERVER, ?MODULE).\n\n	-record(state, {}).\n\n	%%%===================================================================\n	%%% API\n	%%%===================================================================\n\n	start_link() -&gt;\n	    gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).\n\n	%%%===================================================================\n	%%% gen_server callbacks\n	%%%===================================================================\n\n	init([]) -&gt;\n	    {ok, #state{}}.\n\n	handle_call(_Request, _From, State) -&gt;\n	    Reply = ok,\n	    {reply, Reply, State}.\n\n	handle_cast(_Msg, State) -&gt;\n	    {noreply, State}.\n\n	handle_info(_Info, State) -&gt;\n	    {noreply, State}.\n\n	terminate(_Reason, _State) -&gt;\n	    ok.\n\n	code_change(_OldVsn, State, _Extra) -&gt;\n	    {ok, State}.\n\n	%%%===================================================================\n	%%% Internal functions\n	%%%===================================================================\n\n",t.scope="erlang"}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/snippets/erlang"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../../sorter.js"></script>
+        <script src="../../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

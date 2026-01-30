@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/keybinding-vscode.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> keybinding-vscode.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/39</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/31</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/21</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/keyboard/vscode",["require","exports","module","ace/keyboard/hash_handler","ace/config"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../keyboard/hash_handler").HashHandler,</span>i=<span class="cstat-no" title="statement not covered" >e("../config");<span class="cstat-no" title="statement not covered" ></span>t.handler=new r,t.handler.$id="ace/keyboard/vscode",t.handler.addCommands([{name:"toggleWordWrap",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >e.session.getUseWrapMode();<span class="cstat-no" title="statement not covered" ></span>e.session.setUseWrapMode(!t)}</span>,readOnly:!0},{name:"navigateToLastEditLocation",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >e.session.getUndoManager().$lastDelta,</span>n=<span class="cstat-no" title="statement not covered" >t.action=="remove"?t.start:t.end;<span class="cstat-no" title="statement not covered" ></span>e.moveCursorTo(n.row,n.column),e.clearSelection()}</span>},{name:"replaceAll",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e.searchBox?e.searchBox.active===!0&amp;&amp;e.searchBox.replaceOption.checked===!0&amp;&amp;e.searchBox.replaceAll():i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!0)}</span>)}</span>},{name:"replaceOne",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e.searchBox?e.searchBox.active===!0&amp;&amp;e.searchBox.replaceOption.checked===!0&amp;&amp;e.searchBox.replace():i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!0)}</span>)}</span>},{name:"selectAllMatches",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e.searchBox?e.searchBox.active===!0&amp;&amp;e.searchBox.findAll():i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!1)}</span>)}</span>},{name:"toggleFindCaseSensitive",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!1);v</span>ar n=<span class="cstat-no" title="statement not covered" >e.searchBox;<span class="cstat-no" title="statement not covered" ></span>n.caseSensitiveOption.checked=!n.caseSensitiveOption.checked,n.$syncOptions()}</span>)}</span>},{name:"toggleFindInSelection",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!1);v</span>ar n=<span class="cstat-no" title="statement not covered" >e.searchBox;<span class="cstat-no" title="statement not covered" ></span>n.searchOption.checked=!n.searchRange,n.setSearchRange(n.searchOption.checked&amp;&amp;n.editor.getSelectionRange()),n.$syncOptions()}</span>)}</span>},{name:"toggleFindRegex",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!1);v</span>ar n=<span class="cstat-no" title="statement not covered" >e.searchBox;<span class="cstat-no" title="statement not covered" ></span>n.regExpOption.checked=!n.regExpOption.checked,n.$syncOptions()}</span>)}</span>},{name:"toggleFindWholeWord",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >i.loadModule("ace/ext/searchbox",<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.Search(e,!1);v</span>ar n=<span class="cstat-no" title="statement not covered" >e.searchBox;<span class="cstat-no" title="statement not covered" ></span>n.wholeWordOption.checked=!n.wholeWordOption.checked,n.$syncOptions()}</span>)}</span>},{name:"removeSecondaryCursors",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >e.selection.ranges;<span class="cstat-no" title="statement not covered" ></span>t&amp;&amp;t.length&gt;1?e.selection.toSingleRange(t[t.length-1]):e.selection.clearSelection()}</span>}]),[{bindKey:{mac:"Ctrl-G",win:"Ctrl-G"},name:"gotoline"},{bindKey:{mac:"Command-Shift-L|Command-F2",win:"Ctrl-Shift-L|Ctrl-F2"},name:"findAll"},{bindKey:{mac:"Shift-F8|Shift-Option-F8",win:"Shift-F8|Shift-Alt-F8"},name:"goToPreviousError"},{bindKey:{mac:"F8|Option-F8",win:"F8|Alt-F8"},name:"goToNextError"},{bindKey:{mac:"Command-Shift-P|F1",win:"Ctrl-Shift-P|F1"},name:"openCommandPallete"},{bindKey:{mac:"Command-K|Command-S",win:"Ctrl-K|Ctrl-S"},name:"showKeyboardShortcuts"},{bindKey:{mac:"Shift-Option-Up",win:"Alt-Shift-Up"},name:"copylinesup"},{bindKey:{mac:"Shift-Option-Down",win:"Alt-Shift-Down"},name:"copylinesdown"},{bindKey:{mac:"Command-Shift-K",win:"Ctrl-Shift-K"},name:"removeline"},{bindKey:{mac:"Command-Enter",win:"Ctrl-Enter"},name:"addLineAfter"},{bindKey:{mac:"Command-Shift-Enter",win:"Ctrl-Shift-Enter"},name:"addLineBefore"},{bindKey:{mac:"Command-Shift-\\",win:"Ctrl-Shift-\\"},name:"jumptomatching"},{bindKey:{mac:"Command-]",win:"Ctrl-]"},name:"blockindent"},{bindKey:{mac:"Command-[",win:"Ctrl-["},name:"blockoutdent"},{bindKey:{mac:"Ctrl-PageDown",win:"Alt-PageDown"},name:"pagedown"},{bindKey:{mac:"Ctrl-PageUp",win:"Alt-PageUp"},name:"pageup"},{bindKey:{mac:"Shift-Option-A",win:"Shift-Alt-A"},name:"toggleBlockComment"},{bindKey:{mac:"Option-Z",win:"Alt-Z"},name:"toggleWordWrap"},{bindKey:{mac:"Command-G",win:"F3|Ctrl-K Ctrl-D"},name:"findnext"},{bindKey:{mac:"Command-Shift-G",win:"Shift-F3"},name:"findprevious"},{bindKey:{mac:"Option-Enter",win:"Alt-Enter"},name:"selectAllMatches"},{bindKey:{mac:"Command-D",win:"Ctrl-D"},name:"selectMoreAfter"},{bindKey:{mac:"Command-K Command-D",win:"Ctrl-K Ctrl-D"},name:"selectOrFindNext"},{bindKey:{mac:"Shift-Option-I",win:"Shift-Alt-I"},name:"splitSelectionIntoLines"},{bindKey:{mac:"Command-K M",win:"Ctrl-K M"},name:"modeSelect"},{bindKey:{mac:"Command-Option-[",win:"Ctrl-Shift-["},name:"toggleFoldWidget"},{bindKey:{mac:"Command-Option-]",win:"Ctrl-Shift-]"},name:"toggleFoldWidget"},{bindKey:{mac:"Command-K Command-0",win:"Ctrl-K Ctrl-0"},name:"foldall"},{bindKey:{mac:"Command-K Command-J",win:"Ctrl-K Ctrl-J"},name:"unfoldall"},{bindKey:{mac:"Command-K Command-1",win:"Ctrl-K Ctrl-1"},name:"foldOther"},{bindKey:{mac:"Command-K Command-Q",win:"Ctrl-K Ctrl-Q"},name:"navigateToLastEditLocation"},{bindKey:{mac:"Command-K Command-R|Command-K Command-S",win:"Ctrl-K Ctrl-R|Ctrl-K Ctrl-S"},name:"showKeyboardShortcuts"},{bindKey:{mac:"Command-K Command-X",win:"Ctrl-K Ctrl-X"},name:"trimTrailingSpace"},{bindKey:{mac:"Shift-Down|Command-Shift-Down",win:"Shift-Down|Ctrl-Shift-Down"},name:"selectdown"},{bindKey:{mac:"Shift-Up|Command-Shift-Up",win:"Shift-Up|Ctrl-Shift-Up"},name:"selectup"},{bindKey:{mac:"Command-Alt-Enter",win:"Ctrl-Alt-Enter"},name:"replaceAll"},{bindKey:{mac:"Command-Shift-1",win:"Ctrl-Shift-1"},name:"replaceOne"},{bindKey:{mac:"Option-C",win:"Alt-C"},name:"toggleFindCaseSensitive"},{bindKey:{mac:"Option-L",win:"Alt-L"},name:"toggleFindInSelection"},{bindKey:{mac:"Option-R",win:"Alt-R"},name:"toggleFindRegex"},{bindKey:{mac:"Option-W",win:"Alt-W"},name:"toggleFindWholeWord"},{bindKey:{mac:"Command-L",win:"Ctrl-L"},name:"expandtoline"},{bindKey:{mac:"Shift-Esc",win:"Shift-Esc"},name:"removeSecondaryCursors"}].forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){var n=<span class="cstat-no" title="statement not covered" >t.handler.commands[e.name];<span class="cstat-no" title="statement not covered" ></span>n&amp;&amp;(n.bindKey=e.bindKey),t.handler.bindKey(e.bindKey,n||e.name)}</span>)}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/keyboard/vscode"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

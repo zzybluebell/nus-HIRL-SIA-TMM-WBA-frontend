@@ -1,0 +1,47 @@
+.pvt-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+
+    .pvt-page-heard {
+        display: flex;
+        margin: 0.5rem;
+        font-size: 0.25rem;
+
+        .dashboard-page-heard-title {
+            color: black;
+
+            &:hover {
+                color: #2e77fd;
+            }
+        }
+
+        .dashboard-page-heard-title-active {
+            color: #7987a1;
+            margin-left: 0.2rem;
+        }
+    }
+
+    .pvt-page-conetn {
+        flex: 1;
+        margin: 0 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+        border-radius: 0.1rem;
+
+        .pvt-page-conetn-herad {
+            display: flex;
+            justify-content: space-between;
+
+            .pvt-page-conetn-title {
+                font-size: 0.35rem;
+                font-weight: bold;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}

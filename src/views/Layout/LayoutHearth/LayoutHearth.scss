@@ -1,0 +1,117 @@
+.layout-hearth-page {
+    height: 100%;
+    display: flex;
+
+    .sidebar-div {
+        border-right: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 25px;
+        display: none;
+
+
+        .sidebar {
+            width: 18px;
+
+            span {
+                display: block;
+                width: 100%;
+                border-radius: 3px;
+                height: 2px;
+                background: #7987a1;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                position: relative;
+            }
+
+            & span+span {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    .layout-hearth {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0.5rem;
+
+        .input-group {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .profile {
+
+            .profile-img {
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.head-sculpture-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .head-sculpture {
+        margin: .3rem auto;
+
+        .rounded-circle {
+            display: flex;
+            justify-content: center;
+
+            .rounded-circle-img {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+            }
+        }
+
+        .text-center {
+            margin-top: 0.3rem;
+
+            .fw-bolder {
+                font-size: 0.32rem;
+            }
+
+            .text-muted {
+                font-size: 0.24rem;
+            }
+        }
+    }
+
+    .list-unstyled-list {
+        border-top: #7987a1 solid 1px;
+        padding-top: 0.1rem;
+
+        .dropdown-item {
+            cursor: pointer;
+            border-radius: 0.06rem;
+
+            &:hover {
+                background-color: #e5e9f0;
+            }
+
+            .text-body {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin: 0.1rem 0.2rem 0.1rem 0.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar-div {
+        display: flex !important;
+    }
+}

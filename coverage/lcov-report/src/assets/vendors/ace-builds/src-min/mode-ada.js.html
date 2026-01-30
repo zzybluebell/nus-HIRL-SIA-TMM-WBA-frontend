@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/mode-ada.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> mode-ada.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/40</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/17</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/mode/ada_highlight_rules",["require","exports","module","ace/lib/oop","ace/mode/text_highlight_rules"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./text_highlight_rules").TextHighlightRules,</span>s=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >"abort|else|new|return|abs|elsif|not|reverse|abstract|end|null|accept|entry|select|access|exception|of|separate|aliased|exit|or|some|all|others|subtype|and|for|out|synchronized|array|function|overriding|at|tagged|generic|package|task|begin|goto|pragma|terminate|body|private|then|if|procedure|type|case|in|protected|constant|interface|until||is|raise|use|declare|range|delay|limited|record|when|delta|loop|rem|while|digits|renames|with|do|mod|requeue|xor",</span>t=<span class="cstat-no" title="statement not covered" >"true|false|null",</span>n=<span class="cstat-no" title="statement not covered" >"count|min|max|avg|sum|rank|now|coalesce|main",</span>r=<span class="cstat-no" title="statement not covered" >this.createKeywordMapper({"support.function":n,keyword:e,"constant.language":t},"identifier",!0);<span class="cstat-no" title="statement not covered" ></span>this.$rules={start:[{token:"comment",regex:"--.*$"},{token:"string",regex:'".*?"'},{token:"string",regex:"'.'"},{token:"constant.numeric",regex:"[+-]?\\d+(?:(?:\\.\\d*)?(?:[eE][+-]?\\d+)?)?\\b"},{token:r,regex:"[a-zA-Z_$][a-zA-Z0-9_$]*\\b"},{token:"keyword.operator",regex:"\\+|\\-|\\/|\\/\\/|%|&lt;@&gt;|@&gt;|&lt;@|&amp;|\\^|~|&lt;|&gt;|&lt;=|=&gt;|==|!=|&lt;&gt;|="},{token:"paren.lparen",regex:"[\\(]"},{token:"paren.rparen",regex:"[\\)]"},{token:"text",regex:"\\s+"}]}}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(s,i),t.AdaHighlightRules=s}</span>),define("ace/mode/ada",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/ada_highlight_rules","ace/range"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./text").Mode,</span>s=<span class="cstat-no" title="statement not covered" >e("./ada_highlight_rules").AdaHighlightRules,</span>o=<span class="cstat-no" title="statement not covered" >e("../range").Range,</span>u=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.HighlightRules=s,this.$behaviour=this.$defaultBehaviour}</span>;<span class="cstat-no" title="statement not covered" ></span>r.inherits(u,i),<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.lineCommentStart="--",this.getNextLineIndent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >this.$getIndent(t),</span>i=<span class="cstat-no" title="statement not covered" >this.getTokenizer().getLineTokens(t,e),</span>s=<span class="cstat-no" title="statement not covered" >i.tokens;<span class="cstat-no" title="statement not covered" ></span>if(s.length&amp;&amp;s[s.length-1].type=="comment")<span class="cstat-no" title="statement not covered" >return r;<span class="cstat-no" title="statement not covered" >i</span></span>f(e=="start"){var o=<span class="cstat-no" title="statement not covered" >t.match(/^.*(begin|loop|then|is|do)\s*$/);<span class="cstat-no" title="statement not covered" ></span>o&amp;&amp;(r+=n)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r}</span>,this.checkOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >t+n;<span class="cstat-no" title="statement not covered" ></span>return r.match(/^\s*(begin|end)$/)?!0:!1}</span>,this.autoOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >t.getLine(n),</span>i=<span class="cstat-no" title="statement not covered" >t.getLine(n-1),</span>s=<span class="cstat-no" title="statement not covered" >this.$getIndent(i).length,</span>u=<span class="cstat-no" title="statement not covered" >this.$getIndent(r).length;<span class="cstat-no" title="statement not covered" ></span>if(u&lt;=s)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >t</span></span>.outdentRows(new o(n,0,n+2,0))}</span>,this.$id="ace/mode/ada"}</span>.call(u.prototype),t.Mode=u}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/mode/ada"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

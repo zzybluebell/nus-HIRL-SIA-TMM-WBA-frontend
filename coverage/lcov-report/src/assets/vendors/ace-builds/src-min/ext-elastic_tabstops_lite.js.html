@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/ext-elastic_tabstops_lite.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> ext-elastic_tabstops_lite.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/150</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/53</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/20</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/ext/elastic_tabstops_lite",["require","exports","module","ace/editor","ace/config"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$editor=e;v</span>ar t=<span class="cstat-no" title="statement not covered" >this,</span>n=<span class="cstat-no" title="statement not covered" >[],</span>r=<span class="cstat-no" title="statement not covered" >!1;<span class="cstat-no" title="statement not covered" ></span>this.onAfterExec=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >r=!1,t.processRows(n),n=[]}</span>,this.onExec=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >r=!0}</span>,this.onChange=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >r&amp;&amp;(n.indexOf(e.start.row)==-1&amp;&amp;n.push(e.start.row),e.end.row!=e.start.row&amp;&amp;n.push(e.end.row))}</span>}</span>;<span class="cstat-no" title="statement not covered" ></span>(<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.processRows=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$inChange=!0;v</span>ar t=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var n=<span class="cstat-no" title="statement not covered" >0,</span>r=<span class="cstat-no" title="statement not covered" >e.length;</span>n&lt;r;n++){var i=<span class="cstat-no" title="statement not covered" >e[n];<span class="cstat-no" title="statement not covered" ></span>if(t.indexOf(i)&gt;-1)<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar s=<span class="cstat-no" title="statement not covered" >this.$findCellWidthsForBlock(i),</span>o=<span class="cstat-no" title="statement not covered" >this.$setBlockCellWidthsToMax(s.cellWidths),</span>u=<span class="cstat-no" title="statement not covered" >s.firstRow;<span class="cstat-no" title="statement not covered" ></span>for(var a=<span class="cstat-no" title="statement not covered" >0,</span>f=<span class="cstat-no" title="statement not covered" >o.length;</span>a&lt;f;a++){var l=<span class="cstat-no" title="statement not covered" >o[a];<span class="cstat-no" title="statement not covered" ></span>t.push(u),this.$adjustRow(u,l),u++}</span>}<span class="cstat-no" title="statement not covered" ></span>t</span>his.$inChange=!1}</span>,this.$findCellWidthsForBlock=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >[],</span>n,r=<span class="cstat-no" title="statement not covered" >e;<span class="cstat-no" title="statement not covered" ></span>while(r&gt;=0){<span class="cstat-no" title="statement not covered" >n=this.$cellWidthsForRow(r);<span class="cstat-no" title="statement not covered" >i</span>f(n.length==0)<span class="cstat-no" title="statement not covered" >break;<span class="cstat-no" title="statement not covered" >t</span></span>.unshift(n),r--}</span>v</span>ar i=<span class="cstat-no" title="statement not covered" >r+1;<span class="cstat-no" title="statement not covered" ></span>r=e;v</span>ar s=<span class="cstat-no" title="statement not covered" >this.$editor.session.getLength();<span class="cstat-no" title="statement not covered" ></span>while(r&lt;s-1){<span class="cstat-no" title="statement not covered" >r++,n=this.$cellWidthsForRow(r);<span class="cstat-no" title="statement not covered" >i</span>f(n.length==0)<span class="cstat-no" title="statement not covered" >break;<span class="cstat-no" title="statement not covered" >t</span></span>.push(n)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn{cellWidths:t,firstRow:i}}</span>,this.$cellWidthsForRow=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >this.$selectionColumnsForRow(e),</span>n=<span class="cstat-no" title="statement not covered" >[-1].concat(this.$tabsForRow(e)),</span>r=<span class="cstat-no" title="statement not covered" >n.map(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return 0}</span>).slice(1),</span>i=<span class="cstat-no" title="statement not covered" >this.$editor.session.getLine(e);<span class="cstat-no" title="statement not covered" ></span>for(var s=<span class="cstat-no" title="statement not covered" >0,</span>o=<span class="cstat-no" title="statement not covered" >n.length-1;</span>s&lt;o;s++){var u=<span class="cstat-no" title="statement not covered" >n[s]+1,</span>a=<span class="cstat-no" title="statement not covered" >n[s+1],</span>f=<span class="cstat-no" title="statement not covered" >this.$rightmostSelectionInCell(t,a),</span>l=<span class="cstat-no" title="statement not covered" >i.substring(u,a);<span class="cstat-no" title="statement not covered" ></span>r[s]=Math.max(l.replace(/\s+$/g,"").length,f-u)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r}</span>,this.$selectionColumnsForRow=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >[],</span>n=<span class="cstat-no" title="statement not covered" >this.$editor.getCursorPosition();<span class="cstat-no" title="statement not covered" ></span>return this.$editor.session.getSelection().isEmpty()&amp;&amp;e==n.row&amp;&amp;t.push(n.column),t}</span>,this.$setBlockCellWidthsToMax=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >!0,</span>n,r,i,s=<span class="cstat-no" title="statement not covered" >this.$izip_longest(e);<span class="cstat-no" title="statement not covered" ></span>for(var o=<span class="cstat-no" title="statement not covered" >0,</span>u=<span class="cstat-no" title="statement not covered" >s.length;</span>o&lt;u;o++){var a=<span class="cstat-no" title="statement not covered" >s[o];<span class="cstat-no" title="statement not covered" ></span>if(!a.push){<span class="cstat-no" title="statement not covered" >console.error(a);<span class="cstat-no" title="statement not covered" >c</span>ontinue}<span class="cstat-no" title="statement not covered" ></span>a</span>.push(NaN);<span class="cstat-no" title="statement not covered" >f</span>or(var f=<span class="cstat-no" title="statement not covered" >0,</span>l=<span class="cstat-no" title="statement not covered" >a.length;</span>f&lt;l;f++){var c=<span class="cstat-no" title="statement not covered" >a[f];<span class="cstat-no" title="statement not covered" ></span>t&amp;&amp;(n=f,i=0,t=!1);<span class="cstat-no" title="statement not covered" >i</span>f(isNaN(c)){<span class="cstat-no" title="statement not covered" >r=f;<span class="cstat-no" title="statement not covered" >f</span>or(var h=<span class="cstat-no" title="statement not covered" >n;</span>h&lt;r;h++)<span class="cstat-no" title="statement not covered" >e[h][o]=i;<span class="cstat-no" title="statement not covered" >t</span></span>=!0}<span class="cstat-no" title="statement not covered" ></span>i</span>=Math.max(i,c)}</span>}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn e}</span>,this.$rightmostSelectionInCell=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>if(e.length){var r=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var i=<span class="cstat-no" title="statement not covered" >0,</span>s=<span class="cstat-no" title="statement not covered" >e.length;</span>i&lt;s;i++)<span class="cstat-no" title="statement not covered" >e[i]&lt;=t?r.push(i):r.push(0);<span class="cstat-no" title="statement not covered" >n</span></span>=Math.max.apply(Math,r)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn n}</span>,this.$tabsForRow=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >[],</span>n=<span class="cstat-no" title="statement not covered" >this.$editor.session.getLine(e),</span>r=<span class="cstat-no" title="statement not covered" >/\t/g,</span>i;<span class="cstat-no" title="statement not covered" >while((i=r.exec(n))!=null)<span class="cstat-no" title="statement not covered" >t.push(i.index);<span class="cstat-no" title="statement not covered" >r</span></span>eturn t}</span>,this.$adjustRow=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >this.$tabsForRow(e);<span class="cstat-no" title="statement not covered" ></span>if(n.length==0)<span class="cstat-no" title="statement not covered" >return;v</span></span>ar r=<span class="cstat-no" title="statement not covered" >0,</span>i=<span class="cstat-no" title="statement not covered" >-1,</span>s=<span class="cstat-no" title="statement not covered" >this.$izip(t,n);<span class="cstat-no" title="statement not covered" ></span>for(var o=<span class="cstat-no" title="statement not covered" >0,</span>u=<span class="cstat-no" title="statement not covered" >s.length;</span>o&lt;u;o++){var a=<span class="cstat-no" title="statement not covered" >s[o][0],</span>f=<span class="cstat-no" title="statement not covered" >s[o][1];<span class="cstat-no" title="statement not covered" ></span>i+=1+a,f+=r;v</span>ar l=<span class="cstat-no" title="statement not covered" >i-f;<span class="cstat-no" title="statement not covered" ></span>if(l==0)<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar c=<span class="cstat-no" title="statement not covered" >this.$editor.session.getLine(e).substr(0,f),</span>h=<span class="cstat-no" title="statement not covered" >c.replace(/\s*$/g,""),</span>p=<span class="cstat-no" title="statement not covered" >c.length-h.length;<span class="cstat-no" title="statement not covered" ></span>l&gt;0&amp;&amp;(this.$editor.session.getDocument().insertInLine({row:e,column:f+1},Array(l+1).join(" ")+"	"),this.$editor.session.getDocument().removeInLine(e,f,f+1),r+=l),l&lt;0&amp;&amp;p&gt;=-l&amp;&amp;(this.$editor.session.getDocument().removeInLine(e,f+l,f),r+=l)}</span>}</span>,this.$izip_longest=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >if(!e[0])<span class="cstat-no" title="statement not covered" >return[];v</span></span>ar t=<span class="cstat-no" title="statement not covered" >e[0].length,</span>n=<span class="cstat-no" title="statement not covered" >e.length;<span class="cstat-no" title="statement not covered" ></span>for(var r=<span class="cstat-no" title="statement not covered" >1;</span>r&lt;n;r++){var i=<span class="cstat-no" title="statement not covered" >e[r].length;<span class="cstat-no" title="statement not covered" ></span>i&gt;t&amp;&amp;(t=i)}</span>v</span>ar s=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var o=<span class="cstat-no" title="statement not covered" >0;</span>o&lt;t;o++){var u=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var r=<span class="cstat-no" title="statement not covered" >0;</span>r&lt;n;r++)<span class="cstat-no" title="statement not covered" >e[r][o]===""?u.push(NaN):u.push(e[r][o]);<span class="cstat-no" title="statement not covered" >s</span></span>.push(u)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn s}</span>,this.$izip=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >e.length&gt;=t.length?t.length:e.length,</span>r=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var i=<span class="cstat-no" title="statement not covered" >0;</span>i&lt;n;i++){var s=<span class="cstat-no" title="statement not covered" >[e[i],t[i]];<span class="cstat-no" title="statement not covered" ></span>r.push(s)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r}</span>}</span>).call(r.prototype),t.ElasticTabstopsLite=r;v</span>ar i=<span class="cstat-no" title="statement not covered" >e("../editor").Editor;<span class="cstat-no" title="statement not covered" ></span>e("../config").defineOptions(i.prototype,"editor",{useElasticTabstops:{set:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e?(this.elasticTabstops||(this.elasticTabstops=new r(this)),this.commands.on("afterExec",this.elasticTabstops.onAfterExec),this.commands.on("exec",this.elasticTabstops.onExec),this.on("change",this.elasticTabstops.onChange)):this.elasticTabstops&amp;&amp;(this.commands.removeListener("afterExec",this.elasticTabstops.onAfterExec),this.commands.removeListener("exec",this.elasticTabstops.onExec),this.removeListener("change",this.elasticTabstops.onChange))}</span>}})}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/ext/elastic_tabstops_lite"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

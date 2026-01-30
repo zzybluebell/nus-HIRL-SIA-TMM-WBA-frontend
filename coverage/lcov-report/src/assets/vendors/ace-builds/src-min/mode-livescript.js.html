@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/mode-livescript.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> mode-livescript.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/37</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/28</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/17</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../range").Range,</span>i=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){};<span class="cstat-no" title="statement not covered" ></span>(<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.checkOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >return/^\s+$/.test(e)?/^\s*\}/.test(t):!1}</span>,this.autoOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >e.getLine(t),</span>i=<span class="cstat-no" title="statement not covered" >n.match(/^(\s*\})/);<span class="cstat-no" title="statement not covered" ></span>if(!i)<span class="cstat-no" title="statement not covered" >return 0;v</span></span>ar s=<span class="cstat-no" title="statement not covered" >i[1].length,</span>o=<span class="cstat-no" title="statement not covered" >e.findMatchingBracket({row:t,column:s});<span class="cstat-no" title="statement not covered" ></span>if(!o||o.row==t)<span class="cstat-no" title="statement not covered" >return 0;v</span></span>ar u=<span class="cstat-no" title="statement not covered" >this.$getIndent(e.getLine(o.row));<span class="cstat-no" title="statement not covered" ></span>e.replace(new r(t,0,t,s-1),u)}</span>,this.$getIndent=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return e.match(/^\s*/)[0]}</span>}</span>).call(i.prototype),t.MatchingBraceOutdent=i}</span>),define("ace/mode/livescript",["require","exports","module","ace/tokenizer","ace/mode/matching_brace_outdent","ace/mode/behaviour/cstyle","ace/mode/text"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){function <span class="fstat-no" title="function not covered" >u(</span>e,t){function <span class="fstat-no" title="function not covered" >n(</span>){}<span class="cstat-no" title="statement not covered" >return n.prototype=(e.superclass=t).prototype,(e.prototype=new n).constructor=e,typeof t.extended=="function"&amp;&amp;t.extended(e),e}</span>function <span class="fstat-no" title="function not covered" >a(</span>e,t){var n=<span class="cstat-no" title="statement not covered" >{}.hasOwnProperty;<span class="cstat-no" title="statement not covered" ></span>for(var r in t)<span class="cstat-no" title="statement not covered" >n.call(t,r)&amp;&amp;(e[r]=t[r]);<span class="cstat-no" title="statement not covered" >r</span></span>eturn e}</span>var r,i,s,o;<span class="cstat-no" title="statement not covered" >r="(?![\\d\\s])[$\\w\\xAA-\\uFFDC](?:(?!\\s)[$\\w\\xAA-\\uFFDC]|-[A-Za-z])*",t.Mode=i=<span class="fstat-no" title="function not covered" >fu</span>nction(t){function <span class="fstat-no" title="function not covered" >o(</span>){var t;<span class="cstat-no" title="statement not covered" >this.$tokenizer=new(e("../tokenizer").Tokenizer)(o.Rules);<span class="cstat-no" title="statement not covered" >i</span>f(t=e("../mode/matching_brace_outdent"))<span class="cstat-no" title="statement not covered" >this.$outdent=new t.MatchingBraceOutdent;<span class="cstat-no" title="statement not covered" >t</span></span>his.$id="ace/mode/livescript",this.$behaviour=new(e("./behaviour/cstyle").CstyleBehaviour)}</span>var n,i=<span class="cstat-no" title="statement not covered" >u((a(o,t).displayName="LiveScriptMode",o),t).prototype,</span>s=<span class="cstat-no" title="statement not covered" >o;<span class="cstat-no" title="statement not covered" ></span>return n=RegExp("(?:[({[=:]|[-~]&gt;|\\b(?:e(?:lse|xport)|d(?:o|efault)|t(?:ry|hen)|finally|import(?:\\s*all)?|const|var|let|new|catch(?:\\s*"+r+")?))\\s*$"),i.getNextLineIndent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,r){var i,s;<span class="cstat-no" title="statement not covered" >return i=this.$getIndent(t),s=this.$tokenizer.getLineTokens(t,e).tokens,(!s.length||s[s.length-1].type!=="comment")&amp;&amp;e==="start"&amp;&amp;n.test(t)&amp;&amp;(i+=r),i}</span>,i.lineCommentStart="#",i.blockComment={start:"###",end:"###"},i.checkOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r;<span class="cstat-no" title="statement not covered" >return(r=this.$outdent)!=null?r.checkOutdent(t,n):void 8}</span>,i.autoOutdent=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r;<span class="cstat-no" title="statement not covered" >return(r=this.$outdent)!=null?r.autoOutdent(t,n):void 8}</span>,o}</span>(e("../mode/text").Mode),s="(?![$\\w]|-[A-Za-z]|\\s*:(?![:=]))",o={defaultToken:"string"},i.Rules={start:[{token:"keyword",regex:"(?:t(?:h(?:is|row|en)|ry|ypeof!?)|c(?:on(?:tinue|st)|a(?:se|tch)|lass)|i(?:n(?:stanceof)?|mp(?:ort(?:\\s+all)?|lements)|[fs])|d(?:e(?:fault|lete|bugger)|o)|f(?:or(?:\\s+own)?|inally|unction)|s(?:uper|witch)|e(?:lse|x(?:tends|port)|val)|a(?:nd|rguments)|n(?:ew|ot)|un(?:less|til)|w(?:hile|ith)|o[fr]|return|break|let|var|loop)"+s},{token:"constant.language",regex:"(?:true|false|yes|no|on|off|null|void|undefined)"+s},{token:"invalid.illegal",regex:"(?:p(?:ackage|r(?:ivate|otected)|ublic)|i(?:mplements|nterface)|enum|static|yield)"+s},{token:"language.support.class",regex:"(?:R(?:e(?:gExp|ferenceError)|angeError)|S(?:tring|yntaxError)|E(?:rror|valError)|Array|Boolean|Date|Function|Number|Object|TypeError|URIError)"+s},{token:"language.support.function",regex:"(?:is(?:NaN|Finite)|parse(?:Int|Float)|Math|JSON|(?:en|de)codeURI(?:Component)?)"+s},{token:"variable.language",regex:"(?:t(?:hat|il|o)|f(?:rom|allthrough)|it|by|e)"+s},{token:"identifier",regex:r+"\\s*:(?![:=])"},{token:"variable",regex:r},{token:"keyword.operator",regex:"(?:\\.{3}|\\s+\\?)"},{token:"keyword.variable",regex:"(?:@+|::|\\.\\.)",next:"key"},{token:"keyword.operator",regex:"\\.\\s*",next:"key"},{token:"string",regex:"\\\\\\S[^\\s,;)}\\]]*"},{token:"string.doc",regex:"'''",next:"qdoc"},{token:"string.doc",regex:'"""',next:"qqdoc"},{token:"string",regex:"'",next:"qstring"},{token:"string",regex:'"',next:"qqstring"},{token:"string",regex:"`",next:"js"},{token:"string",regex:"&lt;\\[",next:"words"},{token:"string.regex",regex:"//",next:"heregex"},{token:"comment.doc",regex:"/\\*",next:"comment"},{token:"comment",regex:"#.*"},{token:"string.regex",regex:"\\/(?:[^[\\/\\n\\\\]*(?:(?:\\\\.|\\[[^\\]\\n\\\\]*(?:\\\\.[^\\]\\n\\\\]*)*\\])[^[\\/\\n\\\\]*)*)\\/[gimy$]{0,4}",next:"key"},{token:"constant.numeric",regex:"(?:0x[\\da-fA-F][\\da-fA-F_]*|(?:[2-9]|[12]\\d|3[0-6])r[\\da-zA-Z][\\da-zA-Z_]*|(?:\\d[\\d_]*(?:\\.\\d[\\d_]*)?|\\.\\d[\\d_]*)(?:e[+-]?\\d[\\d_]*)?[\\w$]*)"},{token:"lparen",regex:"[({[]"},{token:"rparen",regex:"[)}\\]]",next:"key"},{token:"keyword.operator",regex:"[\\^!|&amp;%+\\-]+"},{token:"text",regex:"\\s+"}],heregex:[{token:"string.regex",regex:".*?//[gimy$?]{0,4}",next:"start"},{token:"string.regex",regex:"\\s*#{"},{token:"comment.regex",regex:"\\s+(?:#.*)?"},{defaultToken:"string.regex"}],key:[{token:"keyword.operator",regex:"[.?@!]+"},{token:"identifier",regex:r,next:"start"},{token:"text",regex:"",next:"start"}],comment:[{token:"comment.doc",regex:".*?\\*/",next:"start"},{defaultToken:"comment.doc"}],qdoc:[{token:"string",regex:".*?'''",next:"key"},o],qqdoc:[{token:"string",regex:'.*?"""',next:"key"},o],qstring:[{token:"string",regex:"[^\\\\']*(?:\\\\.[^\\\\']*)*'",next:"key"},o],qqstring:[{token:"string",regex:'[^\\\\"]*(?:\\\\.[^\\\\"]*)*"',next:"key"},o],js:[{token:"string",regex:"[^\\\\`]*(?:\\\\.[^\\\\`]*)*`",next:"key"},o],words:[{token:"string",regex:".*?\\]&gt;",next:"key"},o]}}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/mode/livescript"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

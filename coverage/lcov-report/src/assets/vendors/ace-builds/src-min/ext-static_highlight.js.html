@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/ext-static_highlight.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> ext-static_highlight.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/88</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/60</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/19</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/ext/static_highlight",["require","exports","module","ace/edit_session","ace/layer/text","ace/config","ace/lib/dom","ace/lib/lang"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";function <span class="fstat-no" title="function not covered" >f(</span>e){<span class="cstat-no" title="statement not covered" >this.type=e,this.style={},this.textContent=""}</span>var r=<span class="cstat-no" title="statement not covered" >e("../edit_session").EditSession,</span>i=<span class="cstat-no" title="statement not covered" >e("../layer/text").Text,</span>s=<span class="cstat-no" title="statement not covered" >".ace_static_highlight {font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', 'Droid Sans Mono', monospace;font-size: 12px;white-space: pre-wrap}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;contain: none;}.ace_static_highlight.ace_show_gutter .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line { position: relative; }.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}",</span>o=<span class="cstat-no" title="statement not covered" >e("../config"),</span>u=<span class="cstat-no" title="statement not covered" >e("../lib/dom"),</span>a=<span class="cstat-no" title="statement not covered" >e("../lib/lang").escapeHTML;<span class="cstat-no" title="statement not covered" ></span>f.prototype.cloneNode=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this}</span>,f.prototype.appendChild=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.textContent+=e.toString()}</span>,f.prototype.toString=<span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>if(this.type!="fragment"){<span class="cstat-no" title="statement not covered" >e.push("&lt;",this.type),this.className&amp;&amp;e.push(" class='",this.className,"'");v</span>ar t=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>for(var n in this.style)<span class="cstat-no" title="statement not covered" >t.push(n,":",this.style[n]);<span class="cstat-no" title="statement not covered" >t</span></span>.length&amp;&amp;e.push(" style='",t.join(""),"'"),e.push("&gt;")}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn this.textContent&amp;&amp;e.push(this.textContent),this.type!="fragment"&amp;&amp;e.push("&lt;/",this.type,"&gt;"),e.join("")}</span>;v</span>ar l=<span class="cstat-no" title="statement not covered" >{createTextNode:<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >return a(e)}</span>,createElement:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return new f(e)}</span>,createFragment:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return new f("fragment")}</span>},</span>c=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.config={},this.dom=l}</span>;<span class="cstat-no" title="statement not covered" ></span>c.prototype=i.prototype;v</span>ar h=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >e.className.match(/lang-(\w+)/),</span>i=<span class="cstat-no" title="statement not covered" >t.mode||r&amp;&amp;"ace/mode/"+r[1];<span class="cstat-no" title="statement not covered" ></span>if(!i)<span class="cstat-no" title="statement not covered" >return!1;v</span></span>ar s=<span class="cstat-no" title="statement not covered" >t.theme||"ace/theme/textmate",</span>o=<span class="cstat-no" title="statement not covered" >"",</span>a=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>if(e.firstElementChild){var f=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>for(var l=<span class="cstat-no" title="statement not covered" >0;</span>l&lt;e.childNodes.length;l++){var c=<span class="cstat-no" title="statement not covered" >e.childNodes[l];<span class="cstat-no" title="statement not covered" ></span>c.nodeType==3?(f+=c.data.length,o+=c.data):a.push(f,c)}</span>}</span>else <span class="cstat-no" title="statement not covered" >o=e.textContent,t.trim&amp;&amp;(o=o.trim());<span class="cstat-no" title="statement not covered" >h</span></span>.render(o,i,s,t.firstLineNumber,!t.showGutter,<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >u.importCssString(t.css,"ace_highlight"),e.innerHTML=t.html;v</span>ar r=<span class="cstat-no" title="statement not covered" >e.firstChild.firstChild;<span class="cstat-no" title="statement not covered" ></span>for(var i=<span class="cstat-no" title="statement not covered" >0;</span>i&lt;a.length;i+=2){var s=<span class="cstat-no" title="statement not covered" >t.session.doc.indexToPosition(a[i]),</span>o=<span class="cstat-no" title="statement not covered" >a[i+1],</span>f=<span class="cstat-no" title="statement not covered" >r.children[s.row];<span class="cstat-no" title="statement not covered" ></span>f&amp;&amp;f.appendChild(o)}<span class="cstat-no" title="statement not covered" ></span>n</span>&amp;&amp;n()}</span>)}</span>;<span class="cstat-no" title="statement not covered" ></span>h.render=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n,i,s,u){function <span class="fstat-no" title="function not covered" >c(</span>){var r=<span class="cstat-no" title="statement not covered" >h.renderSync(e,t,n,i,s);<span class="cstat-no" title="statement not covered" ></span>return u?u(r):r}</span>var a=<span class="cstat-no" title="statement not covered" >1,</span>f=<span class="cstat-no" title="statement not covered" >r.prototype.$modes;<span class="cstat-no" title="statement not covered" ></span>typeof n=="string"&amp;&amp;(a++,o.loadModule(["theme",n],<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >n=e,--a||c()}</span>));v</span>ar l;<span class="cstat-no" title="statement not covered" >return t&amp;&amp;typeof t=="object"&amp;&amp;!t.getTokenizer&amp;&amp;(l=t,t=l.path),typeof t=="string"&amp;&amp;(a++,o.loadModule(["mode",t],<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >if(!f[t]||l)<span class="cstat-no" title="statement not covered" >f[t]=new e.Mode(l);<span class="cstat-no" title="statement not covered" >t</span></span>=f[t],--a||c()}</span>)),--a||c()}</span>,h.renderSync=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n,i,o){<span class="cstat-no" title="statement not covered" >i=parseInt(i||1,10);v</span>ar u=<span class="cstat-no" title="statement not covered" >new r("");<span class="cstat-no" title="statement not covered" ></span>u.setUseWorker(!1),u.setMode(t);v</span>ar a=<span class="cstat-no" title="statement not covered" >new c;<span class="cstat-no" title="statement not covered" ></span>a.setSession(u),Object.keys(a.$tabStrings).forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >if(typeof a.$tabStrings[e]=="string"){var t=<span class="cstat-no" title="statement not covered" >l.createFragment();<span class="cstat-no" title="statement not covered" ></span>t.textContent=a.$tabStrings[e],a.$tabStrings[e]=t}</span>}</span>),u.setValue(e);v</span>ar f=<span class="cstat-no" title="statement not covered" >u.getLength(),</span>h=<span class="cstat-no" title="statement not covered" >l.createElement("div");<span class="cstat-no" title="statement not covered" ></span>h.className=n.cssClass;v</span>ar p=<span class="cstat-no" title="statement not covered" >l.createElement("div");<span class="cstat-no" title="statement not covered" ></span>p.className="ace_static_highlight"+(o?"":" ace_show_gutter"),p.style["counter-reset"]="ace_line "+(i-1);<span class="cstat-no" title="statement not covered" >f</span>or(var d=<span class="cstat-no" title="statement not covered" >0;</span>d&lt;f;d++){var v=<span class="cstat-no" title="statement not covered" >l.createElement("div");<span class="cstat-no" title="statement not covered" ></span>v.className="ace_line";<span class="cstat-no" title="statement not covered" >i</span>f(!o){var m=<span class="cstat-no" title="statement not covered" >l.createElement("span");<span class="cstat-no" title="statement not covered" ></span>m.className="ace_gutter ace_gutter-cell",m.textContent="",v.appendChild(m)}<span class="cstat-no" title="statement not covered" ></span>a</span>.$renderLine(v,d,!1),v.textContent+="\n",p.appendChild(v)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn h.appendChild(p),{css:s+n.cssText,html:h.toString(),session:u}}</span>,n.exports=h,n.exports.highlight=h}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/ext/static_highlight"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

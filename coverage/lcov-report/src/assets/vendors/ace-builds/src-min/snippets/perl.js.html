@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/snippets/perl.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min/snippets</a> perl.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/6</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/snippets/perl",["require","exports","module"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";<span class="cstat-no" title="statement not covered" >t.snippetText="# #!/usr/bin/perl\nsnippet #!\n	#!/usr/bin/env perl\n\n# Hash Pointer\nsnippet .\n	 =&gt;\n# Function\nsnippet sub\n	sub ${1:function_name} {\n		${2:#body ...}\n	}\n# Conditional\nsnippet if\n	if (${1}) {\n		${2:# body...}\n	}\n# Conditional if..else\nsnippet ife\n	if (${1}) {\n		${2:# body...}\n	}\n	else {\n		${3:# else...}\n	}\n# Conditional if..elsif..else\nsnippet ifee\n	if (${1}) {\n		${2:# body...}\n	}\n	elsif (${3}) {\n		${4:# elsif...}\n	}\n	else {\n		${5:# else...}\n	}\n# Conditional One-line\nsnippet xif\n	${1:expression} if ${2:condition};${3}\n# Unless conditional\nsnippet unless\n	unless (${1}) {\n		${2:# body...}\n	}\n# Unless conditional One-line\nsnippet xunless\n	${1:expression} unless ${2:condition};${3}\n# Try/Except\nsnippet eval\n	local $@;\n	eval {\n		${1:# do something risky...}\n	};\n	if (my $e = $@) {\n		${2:# handle failure...}\n	}\n# While Loop\nsnippet wh\n	while (${1}) {\n		${2:# body...}\n	}\n# While Loop One-line\nsnippet xwh\n	${1:expression} while ${2:condition};${3}\n# C-style For Loop\nsnippet cfor\n	for (my $${2:var} = 0; $$2 &lt; ${1:count}; $$2${3:++}) {\n		${4:# body...}\n	}\n# For loop one-line\nsnippet xfor\n	${1:expression} for @${2:array};${3}\n# Foreach Loop\nsnippet for\n	foreach my $${1:x} (@${2:array}) {\n		${3:# body...}\n	}\n# Foreach Loop One-line\nsnippet fore\n	${1:expression} foreach @${2:array};${3}\n# Package\nsnippet package\n	package ${1:`substitute(Filename('', 'Page Title'), '^.', '\\u&amp;', '')`};\n\n	${2}\n\n	1;\n\n	__END__\n# Package syntax perl &gt;= 5.14\nsnippet packagev514\n	package ${1:`substitute(Filename('', 'Page Title'), '^.', '\\u&amp;', '')`} ${2:0.99};\n\n	${3}\n\n	1;\n\n	__END__\n#moose\nsnippet moose\n	use Moose;\n	use namespace::autoclean;\n	${1:#}BEGIN {extends '${2:ParentClass}'};\n\n	${3}\n# parent\nsnippet parent\n	use parent qw(${1:Parent Class});\n# Read File\nsnippet slurp\n	my $${1:var} = do { local $/; open my $file, '&lt;', \"${2:file}\"; &lt;$file&gt; };\n	${3}\n# strict warnings\nsnippet strwar\n	use strict;\n	use warnings;\n# older versioning with perlcritic bypass\nsnippet vers\n	## no critic\n	our $VERSION = '${1:version}';\n	eval $VERSION;\n	## use critic\n# new 'switch' like feature\nsnippet switch\n	use feature 'switch';\n\n# Anonymous subroutine\nsnippet asub\n	sub {\n	 	${1:# body }\n	}\n\n\n\n# Begin block\nsnippet begin\n	BEGIN {\n		${1:# begin body}\n	}\n\n# call package function with some parameter\nsnippet pkgmv\n	__PACKAGE__-&gt;${1:package_method}(${2:var})\n\n# call package function without a parameter\nsnippet pkgm\n	__PACKAGE__-&gt;${1:package_method}()\n\n# call package \"get_\" function without a parameter\nsnippet pkget\n	__PACKAGE__-&gt;get_${1:package_method}()\n\n# call package function with a parameter\nsnippet pkgetv\n	__PACKAGE__-&gt;get_${1:package_method}(${2:var})\n\n# complex regex\nsnippet qrx\n	qr/\n	     ${1:regex}\n	/xms\n\n#simpler regex\nsnippet qr/\n	qr/${1:regex}/x\n\n#given\nsnippet given\n	given ($${1:var}) {\n		${2:# cases}\n		${3:# default}\n	}\n\n# switch-like case\nsnippet when\n	when (${1:case}) {\n		${2:# body}\n	}\n\n# hash slice\nsnippet hslice\n	@{ ${1:hash}  }{ ${2:array} }\n\n\n# map\nsnippet map\n	map {  ${2: body }    }  ${1: @array } ;\n\n\n\n# Pod stub\nsnippet ppod\n	=head1 NAME\n\n	${1:ClassName} - ${2:ShortDesc}\n\n	=head1 SYNOPSIS\n\n	  use $1;\n\n	  ${3:# synopsis...}\n\n	=head1 DESCRIPTION\n\n	${4:# longer description...}\n\n\n	=head1 INTERFACE\n\n\n	=head1 DEPENDENCIES\n\n\n	=head1 SEE ALSO\n\n\n# Heading for a subroutine stub\nsnippet psub\n	=head2 ${1:MethodName}\n\n	${2:Summary....}\n\n# Heading for inline subroutine pod\nsnippet psubi\n	=head2 ${1:MethodName}\n\n	${2:Summary...}\n\n\n	=cut\n# inline documented subroutine\nsnippet subpod\n	=head2 $1\n\n	Summary of $1\n\n	=cut\n\n	sub ${1:subroutine_name} {\n		${2:# body...}\n	}\n# Subroutine signature\nsnippet parg\n	=over 2\n\n	=item\n	Arguments\n\n\n	=over 3\n\n	=item\n	C&lt;${1:DataStructure}&gt;\n\n	  ${2:Sample}\n\n\n	=back\n\n\n	=item\n	Return\n\n	=over 3\n\n\n	=item\n	C&lt;${3:...return data}&gt;\n\n\n	=back\n\n\n	=back\n\n\n\n# Moose has\nsnippet has\n	has ${1:attribute} =&gt; (\n		is	    =&gt; '${2:ro|rw}',\n		isa 	=&gt; '${3:Str|Int|HashRef|ArrayRef|etc}',\n		default =&gt; sub {\n			${4:defaultvalue}\n		},\n		${5:# other attributes}\n	);\n\n\n# override\nsnippet override\n	override ${1:attribute} =&gt; sub {\n		${2:# my $self = shift;};\n		${3:# my ($self, $args) = @_;};\n	};\n\n\n# use test classes\nsnippet tuse\n	use Test::More;\n	use Test::Deep; # (); # uncomment to stop prototype errors\n	use Test::Exception;\n\n# local test lib\nsnippet tlib\n	use lib qw{ ./t/lib };\n\n#test methods\nsnippet tmeths\n	$ENV{TEST_METHOD} = '${1:regex}';\n\n# runtestclass\nsnippet trunner\n	use ${1:test_class};\n	$1-&gt;runtests();\n\n# Test::Class-style test\nsnippet tsub\n	sub t${1:number}_${2:test_case} :Test(${3:num_of_tests}) {\n		my $self = shift;\n		${4:#  body}\n\n	}\n\n# Test::Routine-style test\nsnippet trsub\n	test ${1:test_name} =&gt; { description =&gt; '${2:Description of test.}'} =&gt; sub {\n		my ($self) = @_;\n		${3:# test code}\n	};\n\n#prep test method\nsnippet tprep\n	sub prep${1:number}_${2:test_case} :Test(startup) {\n		my $self = shift;\n		${4:#  body}\n	}\n\n# cause failures to print stack trace\nsnippet debug_trace\n	use Carp; # 'verbose';\n	# cloak \"die\"\n	# warn \"warning\"\n	$SIG{'__DIE__'} = sub {\n		require Carp; Carp::confess\n	};\n\n",t.scope="perl"}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/snippets/perl"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../../sorter.js"></script>
+        <script src="../../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/snippets/python.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min/snippets</a> python.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/6</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/snippets/python",["require","exports","module"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";<span class="cstat-no" title="statement not covered" >t.snippetText='snippet #!\n	#!/usr/bin/env python\nsnippet imp\n	import ${1:module}\nsnippet from\n	from ${1:package} import ${2:module}\n# Module Docstring\nsnippet docs\n	\'\'\'\n	File: ${1:FILENAME:file_name}\n	Author: ${2:author}\n	Description: ${3}\n	\'\'\'\nsnippet wh\n	while ${1:condition}:\n		${2:# TODO: write code...}\n# dowh - does the same as do...while in other languages\nsnippet dowh\n	while True:\n		${1:# TODO: write code...}\n		if ${2:condition}:\n			break\nsnippet with\n	with ${1:expr} as ${2:var}:\n		${3:# TODO: write code...}\n# New Class\nsnippet cl\n	class ${1:ClassName}(${2:object}):\n		"""${3:docstring for $1}"""\n		def __init__(self, ${4:arg}):\n			${5:super($1, self).__init__()}\n			self.$4 = $4\n			${6}\n# New Function\nsnippet def\n	def ${1:fname}(${2:`indent(\'.\') ? \'self\' : \'\'`}):\n		"""${3:docstring for $1}"""\n		${4:# TODO: write code...}\nsnippet deff\n	def ${1:fname}(${2:`indent(\'.\') ? \'self\' : \'\'`}):\n		${3:# TODO: write code...}\n# New Method\nsnippet defs\n	def ${1:mname}(self, ${2:arg}):\n		${3:# TODO: write code...}\n# New Property\nsnippet property\n	def ${1:foo}():\n		doc = "${2:The $1 property.}"\n		def fget(self):\n			${3:return self._$1}\n		def fset(self, value):\n			${4:self._$1 = value}\n# Ifs\nsnippet if\n	if ${1:condition}:\n		${2:# TODO: write code...}\nsnippet el\n	else:\n		${1:# TODO: write code...}\nsnippet ei\n	elif ${1:condition}:\n		${2:# TODO: write code...}\n# For\nsnippet for\n	for ${1:item} in ${2:items}:\n		${3:# TODO: write code...}\n# Encodes\nsnippet cutf8\n	# -*- coding: utf-8 -*-\nsnippet clatin1\n	# -*- coding: latin-1 -*-\nsnippet cascii\n	# -*- coding: ascii -*-\n# Lambda\nsnippet ld\n	${1:var} = lambda ${2:vars} : ${3:action}\nsnippet .\n	self.\nsnippet try Try/Except\n	try:\n		${1:# TODO: write code...}\n	except ${2:Exception}, ${3:e}:\n		${4:raise $3}\nsnippet try Try/Except/Else\n	try:\n		${1:# TODO: write code...}\n	except ${2:Exception}, ${3:e}:\n		${4:raise $3}\n	else:\n		${5:# TODO: write code...}\nsnippet try Try/Except/Finally\n	try:\n		${1:# TODO: write code...}\n	except ${2:Exception}, ${3:e}:\n		${4:raise $3}\n	finally:\n		${5:# TODO: write code...}\nsnippet try Try/Except/Else/Finally\n	try:\n		${1:# TODO: write code...}\n	except ${2:Exception}, ${3:e}:\n		${4:raise $3}\n	else:\n		${5:# TODO: write code...}\n	finally:\n		${6:# TODO: write code...}\n# if __name__ == \'__main__\':\nsnippet ifmain\n	if __name__ == \'__main__\':\n		${1:main()}\n# __magic__\nsnippet _\n	__${1:init}__${2}\n# python debugger (pdb)\nsnippet pdb\n	import pdb; pdb.set_trace()\n# ipython debugger (ipdb)\nsnippet ipdb\n	import ipdb; ipdb.set_trace()\n# ipython debugger (pdbbb)\nsnippet pdbbb\n	import pdbpp; pdbpp.set_trace()\nsnippet pprint\n	import pprint; pprint.pprint(${1})${2}\nsnippet "\n	"""\n	${1:doc}\n	"""\n# test function/method\nsnippet test\n	def test_${1:description}(${2:self}):\n		${3:# TODO: write code...}\n# test case\nsnippet testcase\n	class ${1:ExampleCase}(unittest.TestCase):\n		\n		def test_${2:description}(self):\n			${3:# TODO: write code...}\nsnippet fut\n	from __future__ import ${1}\n#getopt\nsnippet getopt\n	try:\n		# Short option syntax: "hv:"\n		# Long option syntax: "help" or "verbose="\n		opts, args = getopt.getopt(sys.argv[1:], "${1:short_options}", [${2:long_options}])\n	\n	except getopt.GetoptError, err:\n		# Print debug info\n		print str(err)\n		${3:error_action}\n\n	for option, argument in opts:\n		if option in ("-h", "--help"):\n			${4}\n		elif option in ("-v", "--verbose"):\n			verbose = argument\n',t.scope="python"}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/snippets/python"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../../sorter.js"></script>
+        <script src="../../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

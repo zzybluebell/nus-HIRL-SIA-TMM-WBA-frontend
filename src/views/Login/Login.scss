@@ -1,0 +1,124 @@
+.login-page-bg-image {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #10174a;
+  background-image: url('../../assets/images/others/bg-web.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  .login-full-page {
+    flex: 1;
+    width: 35rem;
+    text-align: center;
+    padding-top: 1rem;
+
+    .login-img-fluid {
+      width: 4rem;
+    }
+
+    .login-page-content {
+      background-color: #fff;
+      padding: 0.8rem;
+      margin: 1rem auto;
+      border-radius: 0.04rem;
+
+      .login-page-content-h2 {
+        color: var(--color-text);
+        padding-top: 16px;
+        font-size: 0.44rem;
+        line-height: 0.6rem;
+        font-weight: 600;
+      }
+
+      .login-page-content-h5 {
+        color: var(--color-text);
+        font-size: 0.3rem;
+        line-height: 0.4rem;
+        padding-bottom: 0.3rem;
+      }
+
+      .float-end {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.24rem;
+        padding-bottom: 0.5rem;
+
+        .float-end-text {
+          color: #002569;
+          cursor: pointer;
+
+          &:hover {
+            color: skyblue;
+          }
+        }
+      }
+
+      .login-button {
+        background-color: #002569;
+
+        &:hover {
+          background-color: #2e77fd;
+        }
+      }
+
+      .login-page-content-foot {
+        .text-muted {
+          color: #7987a1;
+          display: flex;
+          justify-content: center;
+
+          .text-muted-text {
+            cursor: pointer;
+
+            &:hover {
+              color: skyblue;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .login-page-content {
+        margin: 0 auto;
+        width: 480px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page-bg-image {
+    background: #fff;
+    background-image: none;
+
+    .login-full-page {
+      padding-top: 0;
+
+      .login-page-content {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.page-modal-conetn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .page-modal-conetn-footer {
+    display: flex;
+
+    .button {
+      background-color: #002569;
+
+      &:hover {
+        background-color: #2e77fd;
+      }
+    }
+  }
+}

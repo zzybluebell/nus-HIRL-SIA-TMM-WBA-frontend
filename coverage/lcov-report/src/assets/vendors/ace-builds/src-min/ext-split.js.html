@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/ext-split.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> ext-split.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/68</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/23</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/28</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/split",["require","exports","module","ace/lib/oop","ace/lib/lang","ace/lib/event_emitter","ace/editor","ace/virtual_renderer","ace/edit_session"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("./lib/oop"),</span>i=<span class="cstat-no" title="statement not covered" >e("./lib/lang"),</span>s=<span class="cstat-no" title="statement not covered" >e("./lib/event_emitter").EventEmitter,</span>o=<span class="cstat-no" title="statement not covered" >e("./editor").Editor,</span>u=<span class="cstat-no" title="statement not covered" >e("./virtual_renderer").VirtualRenderer,</span>a=<span class="cstat-no" title="statement not covered" >e("./edit_session").EditSession,</span>f=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){<span class="cstat-no" title="statement not covered" >this.BELOW=1,this.BESIDE=0,this.$container=e,this.$theme=t,this.$splits=0,this.$editorCSS="",this.$editors=[],this.$orientation=this.BESIDE,this.setSplits(n||1),this.$cEditor=this.$editors[0],this.on("focus",<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$cEditor=e}</span>.bind(this))}</span>;<span class="cstat-no" title="statement not covered" ></span>(<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >r.implement(this,s),this.$createEditor=<span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >document.createElement("div");<span class="cstat-no" title="statement not covered" ></span>e.className=this.$editorCSS,e.style.cssText="position: absolute; top:0px; bottom:0px",this.$container.appendChild(e);v</span>ar t=<span class="cstat-no" title="statement not covered" >new o(new u(e,this.$theme));<span class="cstat-no" title="statement not covered" ></span>return t.on("focus",<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this._emit("focus",t)}</span>.bind(this)),this.$editors.push(t),t.setFontSize(this.$fontSize),t}</span>,this.setSplits=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t;<span class="cstat-no" title="statement not covered" >if(e&lt;1)<span class="cstat-no" title="statement not covered" >throw"The number of splits have to be &gt; 0!";<span class="cstat-no" title="statement not covered" >i</span></span>f(e==this.$splits)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >i</span></span>f(e&gt;this.$splits){<span class="cstat-no" title="statement not covered" >while(this.$splits&lt;this.$editors.length&amp;&amp;this.$splits&lt;e)<span class="cstat-no" title="statement not covered" >t=this.$editors[this.$splits],this.$container.appendChild(t.container),t.setFontSize(this.$fontSize),this.$splits++;<span class="cstat-no" title="statement not covered" >w</span></span>hile(this.$splits&lt;e)<span class="cstat-no" title="statement not covered" >this.$createEditor(),this.$splits++}</span></span>else <span class="cstat-no" title="statement not covered" >while(this.$splits&gt;e)<span class="cstat-no" title="statement not covered" >t=this.$editors[this.$splits-1],this.$container.removeChild(t.container),this.$splits--;<span class="cstat-no" title="statement not covered" >t</span></span></span>his.resize()}</span>,this.getSplits=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this.$splits}</span>,this.getEditor=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return this.$editors[e]}</span>,this.getCurrentEditor=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this.$cEditor}</span>,this.focus=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.$cEditor.focus()}</span>,this.blur=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >this.$cEditor.blur()}</span>,this.setTheme=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$editors.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.setTheme(e)}</span>)}</span>,this.setKeyboardHandler=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$editors.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.setKeyboardHandler(e)}</span>)}</span>,this.forEach=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >this.$editors.forEach(e,t)}</span>,this.$fontSize="",this.setFontSize=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >this.$fontSize=e,this.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >t.setFontSize(e)}</span>)}</span>,this.$cloneSession=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >new a(e.getDocument(),e.getMode()),</span>n=<span class="cstat-no" title="statement not covered" >e.getUndoManager();<span class="cstat-no" title="statement not covered" ></span>return t.setUndoManager(n),t.setTabSize(e.getTabSize()),t.setUseSoftTabs(e.getUseSoftTabs()),t.setOverwrite(e.getOverwrite()),t.setBreakpoints(e.getBreakpoints()),t.setUseWrapMode(e.getUseWrapMode()),t.setUseWorker(e.getUseWorker()),t.setWrapLimitRange(e.$wrapLimitRange.min,e.$wrapLimitRange.max),t.$foldData=e.$cloneFoldData(),t}</span>,this.setSession=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n;<span class="cstat-no" title="statement not covered" >t==null?n=this.$cEditor:n=this.$editors[t];v</span>ar r=<span class="cstat-no" title="statement not covered" >this.$editors.some(<span class="fstat-no" title="function not covered" >fu</span>nction(t){<span class="cstat-no" title="statement not covered" >return t.session===e}</span>);<span class="cstat-no" title="statement not covered" ></span>return r&amp;&amp;(e=this.$cloneSession(e)),n.setSession(e),e}</span>,this.getOrientation=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return this.$orientation}</span>,this.setOrientation=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >if(this.$orientation==e)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >t</span></span>his.$orientation=e,this.resize()}</span>,this.resize=<span class="fstat-no" title="function not covered" >fu</span>nction(){var e=<span class="cstat-no" title="statement not covered" >this.$container.clientWidth,</span>t=<span class="cstat-no" title="statement not covered" >this.$container.clientHeight,</span>n;<span class="cstat-no" title="statement not covered" >if(this.$orientation==this.BESIDE){var r=<span class="cstat-no" title="statement not covered" >e/this.$splits;<span class="cstat-no" title="statement not covered" ></span>for(var i=<span class="cstat-no" title="statement not covered" >0;</span>i&lt;this.$splits;i++)<span class="cstat-no" title="statement not covered" >n=this.$editors[i],n.container.style.width=r+"px",n.container.style.top="0px",n.container.style.left=i*r+"px",n.container.style.height=t+"px",n.resize()}</span></span>else{var s=<span class="cstat-no" title="statement not covered" >t/this.$splits;<span class="cstat-no" title="statement not covered" ></span>for(var i=<span class="cstat-no" title="statement not covered" >0;</span>i&lt;this.$splits;i++)<span class="cstat-no" title="statement not covered" >n=this.$editors[i],n.container.style.width=e+"px",n.container.style.top=i*s+"px",n.container.style.left="0px",n.container.style.height=s+"px",n.resize()}</span></span>}</span>}</span>).call(f.prototype),t.Split=f}</span>),define("ace/ext/split",["require","exports","module","ace/split"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";<span class="cstat-no" title="statement not covered" >n.exports=e("../split")}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/ext/split"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

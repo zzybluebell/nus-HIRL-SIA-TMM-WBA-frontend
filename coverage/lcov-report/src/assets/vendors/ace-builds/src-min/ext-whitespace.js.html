@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/ext-whitespace.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> ext-whitespace.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/98</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/108</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/16</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/ext/whitespace",["require","exports","module","ace/lib/lang"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";var r=<span class="cstat-no" title="statement not covered" >e("../lib/lang");<span class="cstat-no" title="statement not covered" ></span>t.$detectIndentation=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){function <span class="fstat-no" title="function not covered" >c(</span>e){var t=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>for(var r=<span class="cstat-no" title="statement not covered" >e;</span>r&lt;n.length;r+=e)<span class="cstat-no" title="statement not covered" >t+=n[r]||0;<span class="cstat-no" title="statement not covered" >r</span></span>eturn t}</span>var n=<span class="cstat-no" title="statement not covered" >[],</span>r=<span class="cstat-no" title="statement not covered" >[],</span>i=<span class="cstat-no" title="statement not covered" >0,</span>s=<span class="cstat-no" title="statement not covered" >0,</span>o=<span class="cstat-no" title="statement not covered" >Math.min(e.length,1e3);<span class="cstat-no" title="statement not covered" ></span>for(var u=<span class="cstat-no" title="statement not covered" >0;</span>u&lt;o;u++){var a=<span class="cstat-no" title="statement not covered" >e[u];<span class="cstat-no" title="statement not covered" ></span>if(!/^\s*[^*+\-\s]/.test(a))<span class="cstat-no" title="statement not covered" >continue;<span class="cstat-no" title="statement not covered" >i</span></span>f(a[0]=="	")<span class="cstat-no" title="statement not covered" >i++,s=-Number.MAX_VALUE;e</span>lse{var f=<span class="cstat-no" title="statement not covered" >a.match(/^ */)[0].length;<span class="cstat-no" title="statement not covered" ></span>if(f&amp;&amp;a[f]!="	"){var l=<span class="cstat-no" title="statement not covered" >f-s;<span class="cstat-no" title="statement not covered" ></span>l&gt;0&amp;&amp;!(s%l)&amp;&amp;!(f%l)&amp;&amp;(r[l]=(r[l]||0)+1),n[f]=(n[f]||0)+1}<span class="cstat-no" title="statement not covered" ></span>s</span>=f}<span class="cstat-no" title="statement not covered" ></span>w</span>hile(u&lt;o&amp;&amp;a[a.length-1]=="\\")<span class="cstat-no" title="statement not covered" >a=e[u++]}</span></span>v</span>ar h=<span class="cstat-no" title="statement not covered" >r.reduce(<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >return e+t}</span>,0),</span>p=<span class="cstat-no" title="statement not covered" >{score:0,length:0},</span>d=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>for(var u=<span class="cstat-no" title="statement not covered" >1;</span>u&lt;12;u++){var v=<span class="cstat-no" title="statement not covered" >c(u);<span class="cstat-no" title="statement not covered" ></span>u==1?(d=v,v=n[1]?.9:.8,n.length||(v=0)):v/=d,r[u]&amp;&amp;(v+=r[u]/h),v&gt;p.score&amp;&amp;(p={score:v,length:u})}<span class="cstat-no" title="statement not covered" ></span>i</span>f(p.score&amp;&amp;p.score&gt;1.4)var m=<span class="cstat-no" title="statement not covered" >p.length;<span class="cstat-no" title="statement not covered" ></span>i</span>f(i&gt;d+1){<span class="cstat-no" title="statement not covered" >if(m==1||d&lt;i/4||p.score&lt;1.8)<span class="cstat-no" title="statement not covered" >m=undefined;<span class="cstat-no" title="statement not covered" >r</span></span>eturn{ch:"	",length:m}}<span class="cstat-no" title="statement not covered" ></span>i</span>f(d&gt;i+1)<span class="cstat-no" title="statement not covered" >return{ch:" ",length:m}}</span></span>,t.detectIndentation=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var n=<span class="cstat-no" title="statement not covered" >e.getLines(0,1e3),</span>r=<span class="cstat-no" title="statement not covered" >t.$detectIndentation(n)||{};<span class="cstat-no" title="statement not covered" ></span>return r.ch&amp;&amp;e.setUseSoftTabs(r.ch==" "),r.length&amp;&amp;e.setTabSize(r.length),r}</span>,t.trimTrailingSpace=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >e.getDocument(),</span>r=<span class="cstat-no" title="statement not covered" >n.getAllLines(),</span>i=<span class="cstat-no" title="statement not covered" >t&amp;&amp;t.trimEmpty?-1:0,</span>s=<span class="cstat-no" title="statement not covered" >[],</span>o=<span class="cstat-no" title="statement not covered" >-1;<span class="cstat-no" title="statement not covered" ></span>t&amp;&amp;t.keepCursorPosition&amp;&amp;(e.selection.rangeCount?e.selection.rangeList.ranges.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var r=<span class="cstat-no" title="statement not covered" >n[t+1];<span class="cstat-no" title="statement not covered" ></span>if(r&amp;&amp;r.cursor.row==e.cursor.row)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >s</span></span>.push(e.cursor)}</span>):s.push(e.selection.getCursor()),o=0);v</span>ar u=<span class="cstat-no" title="statement not covered" >s[o]&amp;&amp;s[o].row;<span class="cstat-no" title="statement not covered" ></span>for(var a=<span class="cstat-no" title="statement not covered" >0,</span>f=<span class="cstat-no" title="statement not covered" >r.length;</span>a&lt;f;a++){var l=<span class="cstat-no" title="statement not covered" >r[a],</span>c=<span class="cstat-no" title="statement not covered" >l.search(/\s+$/);<span class="cstat-no" title="statement not covered" ></span>a==u&amp;&amp;(c&lt;s[o].column&amp;&amp;c&gt;i&amp;&amp;(c=s[o].column),o++,u=s[o]?s[o].row:-1),c&gt;i&amp;&amp;n.removeInLine(a,c,l.length)}</span>}</span>,t.convertIndentation=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){var i=<span class="cstat-no" title="statement not covered" >e.getTabString()[0],</span>s=<span class="cstat-no" title="statement not covered" >e.getTabSize();<span class="cstat-no" title="statement not covered" ></span>n||(n=s),t||(t=i);v</span>ar o=<span class="cstat-no" title="statement not covered" >t=="	"?t:r.stringRepeat(t,n),</span>u=<span class="cstat-no" title="statement not covered" >e.doc,</span>a=<span class="cstat-no" title="statement not covered" >u.getAllLines(),</span>f=<span class="cstat-no" title="statement not covered" >{},</span>l=<span class="cstat-no" title="statement not covered" >{};<span class="cstat-no" title="statement not covered" ></span>for(var c=<span class="cstat-no" title="statement not covered" >0,</span>h=<span class="cstat-no" title="statement not covered" >a.length;</span>c&lt;h;c++){var p=<span class="cstat-no" title="statement not covered" >a[c],</span>d=<span class="cstat-no" title="statement not covered" >p.match(/^\s*/)[0];<span class="cstat-no" title="statement not covered" ></span>if(d){var v=<span class="cstat-no" title="statement not covered" >e.$getStringScreenWidth(d)[0],</span>m=<span class="cstat-no" title="statement not covered" >Math.floor(v/s),</span>g=<span class="cstat-no" title="statement not covered" >v%s,</span>y=<span class="cstat-no" title="statement not covered" >f[m]||(f[m]=r.stringRepeat(o,m));<span class="cstat-no" title="statement not covered" ></span>y+=l[g]||(l[g]=r.stringRepeat(" ",g)),y!=d&amp;&amp;(u.removeInLine(c,0,d.length),u.insertInLine({row:c,column:0},y))}</span>}<span class="cstat-no" title="statement not covered" ></span>e</span>.setTabSize(n),e.setUseSoftTabs(t==" ")}</span>,t.$parseStringArg=<span class="fstat-no" title="function not covered" >fu</span>nction(e){var t=<span class="cstat-no" title="statement not covered" >{};<span class="cstat-no" title="statement not covered" ></span>/t/.test(e)?t.ch="	":/s/.test(e)&amp;&amp;(t.ch=" ");v</span>ar n=<span class="cstat-no" title="statement not covered" >e.match(/\d+/);<span class="cstat-no" title="statement not covered" ></span>return n&amp;&amp;(t.length=parseInt(n[0],10)),t}</span>,t.$parseArg=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >return e?typeof e=="string"?t.$parseStringArg(e):typeof e.text=="string"?t.$parseStringArg(e.text):e:{}}</span>,t.commands=[{name:"detectIndentation",description:"Detect indentation from content",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >t.detectIndentation(e.session)}</span>},{name:"trimTrailingSpace",description:"Trim trailing whitespace",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){<span class="cstat-no" title="statement not covered" >t.trimTrailingSpace(e.session,n)}</span>},{name:"convertIndentation",description:"Convert indentation to ...",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){var r=<span class="cstat-no" title="statement not covered" >t.$parseArg(n);<span class="cstat-no" title="statement not covered" ></span>t.convertIndentation(e.session,r.ch,r.length)}</span>},{name:"setIndentation",description:"Set indentation",exec:<span class="fstat-no" title="function not covered" >fu</span>nction(e,n){var r=<span class="cstat-no" title="statement not covered" >t.$parseArg(n);<span class="cstat-no" title="statement not covered" ></span>r.length&amp;&amp;e.session.setTabSize(r.length),r.ch&amp;&amp;e.session.setUseSoftTabs(r.ch==" ")}</span>}]}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/ext/whitespace"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

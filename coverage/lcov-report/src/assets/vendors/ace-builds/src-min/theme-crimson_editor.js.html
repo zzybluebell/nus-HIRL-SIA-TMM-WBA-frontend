@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/theme-crimson_editor.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> theme-crimson_editor.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/8</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/theme/crimson_editor",["require","exports","module","ace/lib/dom"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){<span class="cstat-no" title="statement not covered" >t.isDark=!1,t.cssText='.ace-crimson-editor .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-crimson-editor .ace_gutter-layer {width: 100%;text-align: right;}.ace-crimson-editor .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-crimson-editor {background-color: #FFFFFF;color: rgb(64, 64, 64);}.ace-crimson-editor .ace_cursor {color: black;}.ace-crimson-editor .ace_invisible {color: rgb(191, 191, 191);}.ace-crimson-editor .ace_identifier {color: black;}.ace-crimson-editor .ace_keyword {color: blue;}.ace-crimson-editor .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-crimson-editor .ace_constant.ace_language {color: rgb(255, 156, 0);}.ace-crimson-editor .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-crimson-editor .ace_invalid {text-decoration: line-through;color: rgb(224, 0, 0);}.ace-crimson-editor .ace_fold {}.ace-crimson-editor .ace_support.ace_function {color: rgb(192, 0, 0);}.ace-crimson-editor .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-crimson-editor .ace_support.ace_type,.ace-crimson-editor .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-crimson-editor .ace_keyword.ace_operator {color: rgb(49, 132, 149);}.ace-crimson-editor .ace_string {color: rgb(128, 0, 128);}.ace-crimson-editor .ace_comment {color: rgb(76, 136, 107);}.ace-crimson-editor .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-crimson-editor .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-crimson-editor .ace_constant.ace_numeric {color: rgb(0, 0, 64);}.ace-crimson-editor .ace_variable {color: rgb(0, 64, 128);}.ace-crimson-editor .ace_xml-pe {color: rgb(104, 104, 91);}.ace-crimson-editor .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-crimson-editor .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-crimson-editor .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-crimson-editor .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-crimson-editor .ace_marker-layer .ace_active-line {background: rgb(232, 242, 254);}.ace-crimson-editor .ace_gutter-active-line {background-color : #dcdcdc;}.ace-crimson-editor .ace_meta.ace_tag {color:rgb(28, 2, 255);}.ace-crimson-editor .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-crimson-editor .ace_string.ace_regex {color: rgb(192, 0, 192);}.ace-crimson-editor .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}',t.cssClass="ace-crimson-editor";v</span>ar r=<span class="cstat-no" title="statement not covered" >e("../lib/dom");<span class="cstat-no" title="statement not covered" ></span>r.importCssString(t.cssText,t.cssClass,!1)}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/theme/crimson_editor"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

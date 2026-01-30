@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/assets/vendors/ace-builds/src-min/ext-code_lens.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../../index.html">All files</a> / <a href="index.html">src/assets/vendors/ace-builds/src-min</a> ext-code_lens.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/101</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/75</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/22</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >define("ace/ext/code_lens",["require","exports","module","ace/line_widgets","ace/lib/event","ace/lib/lang","ace/lib/dom","ace/editor","ace/config"],<span class="fstat-no" title="function not covered" >fu</span>nction(e,t,n){"use strict";function <span class="fstat-no" title="function not covered" >u(</span>e){var t=<span class="cstat-no" title="statement not covered" >e.$textLayer,</span>n=<span class="cstat-no" title="statement not covered" >t.$lenses;<span class="cstat-no" title="statement not covered" ></span>n&amp;&amp;n.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e.remove()}</span>),t.$lenses=null}</span>function <span class="fstat-no" title="function not covered" >a(</span>e,t){var n=<span class="cstat-no" title="statement not covered" >e&amp;t.CHANGE_LINES||e&amp;t.CHANGE_FULL||e&amp;t.CHANGE_SCROLL||e&amp;t.CHANGE_TEXT;<span class="cstat-no" title="statement not covered" ></span>if(!n)<span class="cstat-no" title="statement not covered" >return;v</span></span>ar r=<span class="cstat-no" title="statement not covered" >t.session,</span>i=<span class="cstat-no" title="statement not covered" >t.session.lineWidgets,</span>s=<span class="cstat-no" title="statement not covered" >t.$textLayer,</span>a=<span class="cstat-no" title="statement not covered" >s.$lenses;<span class="cstat-no" title="statement not covered" ></span>if(!i){<span class="cstat-no" title="statement not covered" >a&amp;&amp;u(t);<span class="cstat-no" title="statement not covered" >r</span>eturn}</span>v</span>ar f=<span class="cstat-no" title="statement not covered" >t.$textLayer.$lines.cells,</span>l=<span class="cstat-no" title="statement not covered" >t.layerConfig,</span>c=<span class="cstat-no" title="statement not covered" >t.$padding;<span class="cstat-no" title="statement not covered" ></span>a||(a=s.$lenses=[]);v</span>ar h=<span class="cstat-no" title="statement not covered" >0;<span class="cstat-no" title="statement not covered" ></span>for(var p=<span class="cstat-no" title="statement not covered" >0;</span>p&lt;f.length;p++){var d=<span class="cstat-no" title="statement not covered" >f[p].row,</span>v=<span class="cstat-no" title="statement not covered" >i[d],</span>m=<span class="cstat-no" title="statement not covered" >v&amp;&amp;v.lenses;<span class="cstat-no" title="statement not covered" ></span>if(!m||!m.length)<span class="cstat-no" title="statement not covered" >continue;v</span></span>ar g=<span class="cstat-no" title="statement not covered" >a[h];<span class="cstat-no" title="statement not covered" ></span>g||(g=a[h]=o.buildDom(["div",{"class":"ace_codeLens"}],t.container)),g.style.height=l.lineHeight+"px",h++;<span class="cstat-no" title="statement not covered" >f</span>or(var y=<span class="cstat-no" title="statement not covered" >0;</span>y&lt;m.length;y++){var b=<span class="cstat-no" title="statement not covered" >g.childNodes[2*y];<span class="cstat-no" title="statement not covered" ></span>b||(y!=0&amp;&amp;g.appendChild(o.createTextNode("\u00a0|\u00a0")),b=o.buildDom(["a"],g)),b.textContent=m[y].title,b.lensCommand=m[y]}<span class="cstat-no" title="statement not covered" ></span>w</span>hile(g.childNodes.length&gt;2*y-1)<span class="cstat-no" title="statement not covered" >g.lastChild.remove();v</span></span>ar w=<span class="cstat-no" title="statement not covered" >t.$cursorLayer.getPixelPosition({row:d,column:0},!0).top-l.lineHeight*v.rowsAbove-l.offset;<span class="cstat-no" title="statement not covered" ></span>g.style.top=w+"px";v</span>ar E=<span class="cstat-no" title="statement not covered" >t.gutterWidth,</span>S=<span class="cstat-no" title="statement not covered" >r.getLine(d).search(/\S|$/);<span class="cstat-no" title="statement not covered" ></span>S==-1&amp;&amp;(S=0),E+=S*l.characterWidth,g.style.paddingLeft=c+E+"px"}<span class="cstat-no" title="statement not covered" ></span>w</span>hile(h&lt;a.length)<span class="cstat-no" title="statement not covered" >a.pop().remove()}</span></span>function <span class="fstat-no" title="function not covered" >f(</span>e){<span class="cstat-no" title="statement not covered" >if(!e.lineWidgets)<span class="cstat-no" title="statement not covered" >return;v</span></span>ar t=<span class="cstat-no" title="statement not covered" >e.widgetManager;<span class="cstat-no" title="statement not covered" ></span>e.lineWidgets.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e&amp;&amp;e.lenses&amp;&amp;t.removeLineWidget(e)}</span>)}</span>function <span class="fstat-no" title="function not covered" >l(</span>e){<span class="cstat-no" title="statement not covered" >e.codeLensProviders=[],e.renderer.on("afterRender",a),e.$codeLensClickHandler||(e.$codeLensClickHandler=<span class="fstat-no" title="function not covered" >fu</span>nction(t){var n=<span class="cstat-no" title="statement not covered" >t.target.lensCommand;<span class="cstat-no" title="statement not covered" ></span>if(!n)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >e</span></span>.execCommand(n.id,n.arguments),e._emit("codeLensClick",t)}</span>,i.addListener(e.container,"click",e.$codeLensClickHandler,e)),e.$updateLenses=<span class="fstat-no" title="function not covered" >fu</span>nction(){function <span class="fstat-no" title="function not covered" >o(</span>){var r=<span class="cstat-no" title="statement not covered" >n.selection.cursor,</span>i=<span class="cstat-no" title="statement not covered" >n.documentToScreenRow(r),</span>o=<span class="cstat-no" title="statement not covered" >n.getScrollTop(),</span>u=<span class="cstat-no" title="statement not covered" >t.setLenses(n,s),</span>a=<span class="cstat-no" title="statement not covered" >n.$undoManager&amp;&amp;n.$undoManager.$lastDelta;<span class="cstat-no" title="statement not covered" ></span>if(a&amp;&amp;a.action=="remove"&amp;&amp;a.lines.length&gt;1)<span class="cstat-no" title="statement not covered" >return;v</span></span>ar f=<span class="cstat-no" title="statement not covered" >n.documentToScreenRow(r),</span>l=<span class="cstat-no" title="statement not covered" >e.renderer.layerConfig.lineHeight,</span>c=<span class="cstat-no" title="statement not covered" >n.getScrollTop()+(f-i)*l;<span class="cstat-no" title="statement not covered" ></span>u==0&amp;&amp;o&lt;l/4&amp;&amp;o&gt;-l/4&amp;&amp;(c=-l),n.setScrollTop(c)}</span>var n=<span class="cstat-no" title="statement not covered" >e.session;<span class="cstat-no" title="statement not covered" ></span>if(!n)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >n</span></span>.widgetManager||(n.widgetManager=new r(n),n.widgetManager.attach(e));v</span>ar i=<span class="cstat-no" title="statement not covered" >e.codeLensProviders.length,</span>s=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>e.codeLensProviders.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e.provideCodeLenses(n,<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >if(e)<span class="cstat-no" title="statement not covered" >return;<span class="cstat-no" title="statement not covered" >t</span></span>.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >s.push(e)}</span>),i--,i==0&amp;&amp;o()}</span>)}</span>)}</span>;v</span>ar n=<span class="cstat-no" title="statement not covered" >s.delayedCall(e.$updateLenses);<span class="cstat-no" title="statement not covered" ></span>e.$updateLensesOnInput=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >n.delay(250)}</span>,e.on("input",e.$updateLensesOnInput)}</span>function <span class="fstat-no" title="function not covered" >c(</span>e){<span class="cstat-no" title="statement not covered" >e.off("input",e.$updateLensesOnInput),e.renderer.off("afterRender",a),e.$codeLensClickHandler&amp;&amp;e.container.removeEventListener("click",e.$codeLensClickHandler)}</span>var r=<span class="cstat-no" title="statement not covered" >e("../line_widgets").LineWidgets,</span>i=<span class="cstat-no" title="statement not covered" >e("../lib/event"),</span>s=<span class="cstat-no" title="statement not covered" >e("../lib/lang"),</span>o=<span class="cstat-no" title="statement not covered" >e("../lib/dom");<span class="cstat-no" title="statement not covered" ></span>t.setLenses=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){var n=<span class="cstat-no" title="statement not covered" >Number.MAX_VALUE;<span class="cstat-no" title="statement not covered" ></span>return f(e),t&amp;&amp;t.forEach(<span class="fstat-no" title="function not covered" >fu</span>nction(t){var r=<span class="cstat-no" title="statement not covered" >t.start.row,</span>i=<span class="cstat-no" title="statement not covered" >t.start.column,</span>s=<span class="cstat-no" title="statement not covered" >e.lineWidgets&amp;&amp;e.lineWidgets[r];<span class="cstat-no" title="statement not covered" ></span>if(!s||!s.lenses)<span class="cstat-no" title="statement not covered" >s=e.widgetManager.$registerLineWidget({rowCount:1,rowsAbove:1,row:r,column:i,lenses:[]});<span class="cstat-no" title="statement not covered" >s</span></span>.lenses.push(t.command),r&lt;n&amp;&amp;(n=r)}</span>),e._emit("changeFold",{data:{start:{row:n}}}),n}</span>,t.registerCodeLensProvider=<span class="fstat-no" title="function not covered" >fu</span>nction(e,t){<span class="cstat-no" title="statement not covered" >e.setOption("enableCodeLens",!0),e.codeLensProviders.push(t),e.$updateLensesOnInput()}</span>,t.clear=<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >t.setLenses(e,null)}</span>;v</span>ar h=<span class="cstat-no" title="statement not covered" >e("../editor").Editor;<span class="cstat-no" title="statement not covered" ></span>e("../config").defineOptions(h.prototype,"editor",{enableCodeLens:{set:<span class="fstat-no" title="function not covered" >fu</span>nction(e){<span class="cstat-no" title="statement not covered" >e?l(this):c(this)}</span>}}),o.importCssString(".ace_codeLens {    position: absolute;    color: #aaa;    font-size: 88%;    background: inherit;    width: 100%;    display: flex;    align-items: flex-end;    pointer-events: none;}.ace_codeLens &gt; a {    cursor: pointer;    pointer-events: auto;}.ace_codeLens &gt; a:hover {    color: #0000ff;    text-decoration: underline;}.ace_dark &gt; .ace_codeLens &gt; a:hover {    color: #4e94ce;}","codelense.css",!1)}</span>); </span>               <span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+<span class="cstat-no" title="statement not covered" >                    window.require(["ace/ext/code_lens"], <span class="fstat-no" title="function not covered" >fu</span>nction(m) {</span>
+<span class="cstat-no" title="statement not covered" >                        if (typeof module == "object" &amp;&amp; typeof exports == "object" &amp;&amp; module) {</span>
+<span class="cstat-no" title="statement not covered" >                            module.exports = m;</span>
+                        }
+                    });
+                })();
+            </pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-20T09:55:08.196Z
+            </div>
+        <script src="../../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../../sorter.js"></script>
+        <script src="../../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

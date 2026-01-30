@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+* *::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #2C2C2C;
+    --bs-white: #fff;
+    --bs-gray: #7987a1;
+    --bs-gray-dark: #212a3a;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #cbd1db;
+    --bs-gray-500: #aeb7c5;
+    --bs-gray-600: #7987a1;
+    --bs-gray-700: #41516c;
+    --bs-gray-800: #212a3a;
+    --bs-gray-900: #2C2C2C;
+    --bs-primary: #002569;
+    --bs-secondary: #7987a1;
+    --bs-success: #05a34a;
+    --bs-info: #8A6C4C;
+    --bs-warning: #FF9F00;
+    --bs-danger: #FF0000;
+    --bs-light: #e9ecef;
+    --bs-dark: #2C2C2C;
+    --bs-primary-rgb: 0, 37, 105;
+    --bs-secondary-rgb: 121, 135, 161;
+    --bs-success-rgb: 5, 163, 74;
+    --bs-info-rgb: 138, 108, 76;
+    --bs-warning-rgb: 255, 159, 0;
+    --bs-danger-rgb: 255, 0, 0;
+    --bs-light-rgb: 233, 236, 239;
+    --bs-dark-rgb: 6, 12, 23;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 0, 0, 0;
+    --bs-body-bg-rgb: 249, 250, 251;
+    --bs-font-sans-serif: Proxima Nova, "Roboto", Helvetica, sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 0.875rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #2C2C2C;
+    --bs-body-bg: #f9fafb;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #e9ecef;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.25rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #002569;
+    --bs-link-hover-color: #2E77fD;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+
+    --color-text: #222;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: var(--bs-body-font-family);
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    vertical-align: middle;
+}
+
+/* custom */
+a {
+    outline: none;
+    color: #16418a;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+a:focus {
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+/* 以下为apexcharts图表css */
+
+div.apexcharts-canvas .apexcharts-menu {
+    background: #fff !important;
+    color: #2C2C2C;
+    border-color: #e9ecef;
+}
+
+div.apexcharts-canvas .apexcharts-zoom-icon svg,
+div.apexcharts-canvas .apexcharts-zoomin-icon svg,
+div.apexcharts-canvas .apexcharts-zoomout-icon svg,
+div.apexcharts-canvas .apexcharts-reset-icon svg,
+div.apexcharts-canvas .apexcharts-pan-icon svg,
+div.apexcharts-canvas .apexcharts-selection-icon svg,
+div.apexcharts-canvas .apexcharts-menu-icon svg,
+div.apexcharts-canvas .apexcharts-toolbar-custom-icon svg {
+    fill: #7987a1;
+}
+
+div.apexcharts-canvas .apexcharts-legend.apexcharts-align-right .apexcharts-legend-series,
+div.apexcharts-canvas .apexcharts-legend.apexcharts-align-left .apexcharts-legend-series {
+    display: flex;
+    align-items: center;
+}
+
+div.apexcharts-canvas .apexcharts-legend-marker {
+    margin-right: 3px;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip {
+    background: rgba(255, 255, 255, 0.8);
+    color: #2C2C2C;
+    box-shadow: 0 5px 10px 0 rgba(183, 192, 206, 0.2);
+    border-radius: 0.15rem;
+    border: 1px solid #f2f4f9;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
+    border-color: #e9ecef;
+    background-color: #fff;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip * {
+    font-family: "Roboto", Helvetica, sans-serif !important;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active,
+div.apexcharts-canvas .apexcharts-tooltip-series-group:last-child {
+    padding: 0 10px;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip-text-y-value,
+div.apexcharts-canvas .apexcharts-tooltip-text-goals-value,
+div.apexcharts-canvas .apexcharts-tooltip-text-z-value {
+    margin-left: 0;
+}
+
+div.apexcharts-canvas .apexcharts-tooltip-title {
+    margin-bottom: 0;
+}
+
+div.apexcharts-canvas .apexcharts-xaxistooltip,
+div.apexcharts-canvas .apexcharts-yaxistooltip {
+    background: #fff;
+    color: #2C2C2C;
+    border-color: #f2f4f9;
+}
+
+div.apexcharts-canvas .apexcharts-xaxistooltip-bottom::before {
+    border-bottom-color: #f2f4f9;
+}
+
+div.apexcharts-canvas .apexcharts-xaxistooltip-bottom::after {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+div.apexcharts-canvas .apexcharts-yaxistooltip-left:before,
+div.apexcharts-canvas .apexcharts-yaxistooltip-right:before {
+    border-left-color: #f2f4f9;
+}
+
+div.apexcharts-canvas .apexcharts-yaxistooltip-left:after,
+div.apexcharts-canvas .apexcharts-yaxistooltip-right:after {
+    border-left-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* 滚动轴 */
+.overflow-y-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+    display: none
+}
+
+.overflow-x-scroll {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+    display: none
+}
+
+.marg05 {
+    margin: 0.5rem;
+}
+
+#root {
+    overflow: hidden;
+}
