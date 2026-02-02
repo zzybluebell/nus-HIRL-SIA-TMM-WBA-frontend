@@ -4,6 +4,7 @@ import { useContext, useState } from 'react'
 import { Alert, Button, Typography ,Checkbox } from 'antd'
 import LogoHub from 'src/assets/images/img/logo-hub.png'
 import AndroidQRCode from 'src/assets/images/img/android_qr_code.png'
+import iOSQRCode from 'src/assets/images/img/iOS_qr_code.png'
 import OPEN_WELLNESS_BUDDY_APP from 'src/assets/images/img/open_wellness_buddy_app.png'
 import pdfOne from 'src/assets/pdf/User-Guide-Mobile.pdf'
 import { FilePdfOutlined } from '@ant-design/icons'
@@ -58,7 +59,7 @@ const StepThreePageOne = ({change , checked}) => {
           {/* qr code */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Text style={{ fontSize: '12px', marginBottom: '4px', fontWeight: 600 }}>iOS</Text>
-            <img className='section_img' src={AndroidQRCode} alt='ios_qr_code' style={{ width: '100%', height: 'auto' }} />
+            <img className='section_img' src={iOSQRCode} alt='ios_qr_code' style={{ width: '100%', height: 'auto' }} />
           </div>
           {/* qr code */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
