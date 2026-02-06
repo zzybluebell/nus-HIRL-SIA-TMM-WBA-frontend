@@ -25,7 +25,7 @@ export default function Register() {
         { label: 'Female', value: 'Female' },
     ];
 
-    const departmentOptions = ['AOD', 'SINHUB', 'TMM', 'ENG', 'CCS'].map(item => ({ label: item, value: item }));
+    const departmentOptions = ['AOD', 'SINHUB', 'TMM', 'ENG', 'CCS', 'CCC'].map(item => ({ label: item, value: item }));
     
     const sectionOptionsMap = {
         'AOD': [
@@ -51,6 +51,9 @@ export default function Register() {
         ],
         'CCS': [
             'Customer Contact Services (CC)'
+        ],
+        'CCC': [
+            'Cabin Crew Control Centre'
         ]
     };
 
@@ -108,10 +111,10 @@ export default function Register() {
         } catch (error) {
             console.error('Registration failed:', error);
             if (error.code === 'ERR_NETWORK' || error.message === 'Network Error') {
-                message.error('Please enter a valid Mask ID assigned to you (sent to your official SIA email).');
+                message.error('Please enter a valid Mask ID assigned to you (sent to your personal registered email for this study).');
             } else {
                 message.error(
-                  'Registration failed. Please enter a valid Mask ID assigned to you (sent to your official SIA email).'
+                  'Registration failed. Please enter a valid Mask ID assigned to you (sent to your personal registered email for this study).'
                 )
             }
         } finally {
